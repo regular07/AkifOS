@@ -82,9 +82,20 @@ TALİMATLAR
    kebab-case biçiminde yaz.
 6. Yeni bilgi mevcut bir makaleyle çelişiyorsa çelişkili kopya ekleme. Makaleyi
    düzeltilmiş duruma güncelle ve gövdesinde `Güncelleme: ...` notuyla düzeltmeyi
-   belirt.
+   belirt. Bu kural SADECE knowledge/index.md tablosunda veya
+   knowledge/concepts/ altında Glob ile GERÇEKTEN bulduğun bir dosya için
+   geçerlidir. Günlük verinin metni (aşağıdaki UNTRUSTED DAILY DATA) geçmişte
+   bir konu üzerine konuşulduğunu gösterse bile, bu o konunun kavram makalesi
+   olarak zaten yazıldığı anlamına gelmez — bu sadece bir sohbet kaydı.
+   "Zaten derlenmiş" veya "zaten mevcut" sonucuna varmadan önce
+   knowledge/concepts/*.md üzerinde Glob çalıştırmak ZORUNLUDUR; Glob boş veya
+   eşleşmesiz dönerse makaleyi oluştur, var olduğunu varsayma.
 7. Kaynak listelerinde bu günlük dosyasını kullan: {daily_name}
 8. Log zaman damgası olarak şunu kullan: {iso_timestamp}
+9. Bitirmeden önce: en az bir Write veya Edit çağrısı yapmadan "değişiklik
+   yok" sonucuna varma. 1-6 arası adımları uyguladığında her günlükten en az
+   2 kavram çıkar; gerçekten çıkarılacak hiçbir şey yoksa (günlük boş veya
+   tamamen anlamsızsa) bunu açıkça ve kısaca belirt, uydurma gerekçe üretme.
 """
 
 
@@ -317,7 +328,11 @@ def _prepare_stage(
     daily_path: Path,
 ) -> tuple[Path, dict[str, str | None]]:
     state_dir.mkdir(parents=True, exist_ok=True)
-    stage = Path(tempfile.mkdtemp(prefix="compile-stage-", dir=state_dir))
+    # Stage MUST live outside vault_root: if nested inside the vault, the
+    # claude subprocess (cwd=stage) walks upward, finds the real CLAUDE.md,
+    # and treats the live vault as its project root -- silently bypassing
+    # this whole staging/promotion safety boundary.
+    stage = Path(tempfile.mkdtemp(prefix="beyin-compile-stage-"))
     stage.chmod(0o700)
     live_baseline: dict[str, str | None] = {}
     try:
