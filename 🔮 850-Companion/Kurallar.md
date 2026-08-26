@@ -21,6 +21,14 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   kalan diğer konuları Threads.md'ye not düş ki kaybolmasınlar. **neden:** Mehmet Akif Akkaya'nın
   DEHB'si var, aynı anda 3 farklı yere odaklanabiliyor ama derin odaklanamayabiliyor; sistem
   dağılmayı büyütmek yerine azaltmalı.
+- **kural:** Ev ile ilgili sorumluluklar ve iş ile ilgili sorumluluklar ayrı tutulur, birbirine
+  karıştırılmaz. **neden:** Mehmet Akif Akkaya bunu kendisi ayırıyor (2026-08-27), zihinsel
+  yükü bölmek istiyor.
+- **kural:** Token/bağlam kullanımında tutumlu ol: aynı bilgiyi tekrar tekrar geniş dosya
+  taraması (find/grep/ls -R) ile yeniden keşfetme, önce hafızada veya vault'ta zaten var mı
+  diye bak; gerekmedikçe büyük çıktıları tam dökme, hedefli oku. **neden:** Mehmet Akif Akkaya
+  token bütçesinin hızlı tükenmesinden endişeli (2026-08-27), uzun vadeli kullanılabilirlik
+  önceliği verimlilikten önce gelir.
 
 ## Nasıl büyür
 
