@@ -18,3 +18,4 @@ Bu klasörde terminal aç ve `claude` çalıştır, sonra konuş. Dündar Dinç 
 düzenler, üstüne koyar. Notları sen yönetmezsin: konuşursun, o organize eder.
 
 > Masaüstündeki 🧠 ikonu bu vault'u tek tıkla Obsidian'da açar.
+
