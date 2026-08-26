@@ -29,3 +29,9 @@ Claude.ai'deki tek proje, 2026-08-26 tarihinde export ile buraya taşındı. Olu
 - [[TS_13687_Ozet]] (7644 karakter, kaynak: TS_13687_Ozet.docx)
 - [[TS_13566_Ozet]] (7395 karakter, kaynak: TS_13566_Ozet.docx)
 - [[ölçekleme]] (54033 karakter, kaynak: ölçekleme.xlsx)
+
+## Kaynaklar
+
+- [[OneDrive Kaynak Haritası]] — Akif'in OneDrive'ındaki tüm iş dosyalarının (106 standart PDF'i
+  dahil) referans haritası, 2026-08-27'de çıkarıldı. Orijinal dosyalar OneDrive'da duruyor,
+  buraya kopyalanmadı.
