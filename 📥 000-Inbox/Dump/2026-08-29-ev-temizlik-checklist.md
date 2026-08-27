@@ -12,6 +12,7 @@ tags: [ev, checklist, hatirlatma]
 
 ## 2026-08-28'den devir
 - [ ] Mutfak: her yer Asperox yağ çözücü ile silinecek
+- [ ] Mutfak: tüm çöpler boşaltılacak
 - [ ] Yatak odası: yatak örtüsü değiştirilecek
 - [ ] Orta banyo: lavabo temizlenecek
 - [ ] Orta banyo: klozet temizlenecek
