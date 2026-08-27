@@ -13,6 +13,8 @@ tags: [freelance, web-tasarim, fiyatlandirma, modüler, ekip]
 
 **Felsefe:** Müşteri neyi isterse o kadarını öde — tek index sayfası mı, çok sayfası mı, reklam mı, e-commerce mi, hepsi ayrı modüler.
 
+> 📌 **Görsel tablo:** https://claude.ai/code/artifact/f1480a49-1238-4a36-a7bb-4db3f9a0e7a1
+
 ---
 
 ## 1. BASE SITE (Anahtar Teslim - Tek Index Sayfası)
