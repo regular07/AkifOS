@@ -114,7 +114,8 @@ ws["A3"] = "1) BASE SITE (anahtar teslim, tek index sayfası — domain + canlı
 ws["A3"].font = BOLD
 _header_row(ws, 4, ["Paket", "Tasarım tipi", "Hazırlanma", "Fiyat (₺)"])
 _rows(ws, 5, [
-    ["Basic", "Standart tasarım, responsive, interaktif", "2-3 gün", 2000],
+    ["Basic", "Basit vitrin: header + tanıtım görseli + kartlar + iletişim footer. "
+     "Responsive garanti, hover efektleri. Profesyonel tasarım/renk paleti değil.", "2-3 gün", 3000],
     ["Standart", "Gelişmiş tasarım, daha fazla özellik", "4-7 gün", 5000],
     ["Premium", "Video-scroll animasyonlu, profesyonel", "10-14 gün", 12000],
 ], widths=[18, 46, 14, 14], accent_first=True)
@@ -128,13 +129,15 @@ _rows(ws, 11, [
     ["Premium", "Kompleks sayfa (animasyon, interaktif)", 2000, ""],
 ], accent_first=True)
 
-ws["A15"] = "3) AYLIK ABONELİKLER (bağımsız — müşteri hiçbirini ya da hepsini seçebilir)"
+ws["A15"] = "3) DESTEK & ABONELİKLER (bağımsız — müşteri hiçbirini ya da hepsini seçebilir)"
 ws["A15"].font = BOLD
-_header_row(ws, 16, ["Hizmet", "Basic (₺/ay)", "Standart (₺/ay)", "Premium (₺/ay)"])
+_header_row(ws, 16, ["Hizmet", "Basic (₺)", "Standart (₺/ay)", "Premium (₺/ay)"])
 _rows(ws, 17, [
-    ["Bakım (içerik update + monitoring + QA)", 800, 1200, 1800],
-    ["Premium Support 7/24 (danışmanlık + on-call)", 1500, 2500, 4000],
-    ["Reklam Yönetimi (Google/Meta Ads + rapor)", 1500, 2500, 4000],
+    ["Basit Destek — Basic paket (hata düzeltme, içerik & görsel değişimi, iletişim güncelleme)",
+     500, "—", "—"],
+    ["Bakım (içerik update + monitoring + QA)", "—", 1200, 1800],
+    ["Premium Support 7/24 (danışmanlık + on-call)", "—", 2500, 4000],
+    ["Reklam Yönetimi (Google/Meta Ads + rapor) — Basic pakette YOK", "—", 2500, 4000],
 ], accent_first=True)
 
 ws["A22"] = "4) E-COMMERCE (online satış — backend + payment gateway)"
@@ -161,7 +164,7 @@ ws["B4"].border = BOX
 
 _header_row(ws, 6, ["Kalem", "Birim fiyat (₺)", "Adet", "Tutar (₺)"])
 calc = [
-    ("Base Site — Basic", 2000),
+    ("Base Site — Basic", 3000),
     ("Base Site — Standart", 5000),
     ("Base Site — Premium", 12000),
     ("Ek sayfa — Basic", 500),
@@ -219,9 +222,10 @@ for col in range(2, 5):
     ws.cell(row=m0, column=col).fill = FILL_MID
 _header_row(ws, m0 + 1, ["Hizmet", "Birim (₺/ay)", "Seç (1/0)", "Tutar (₺/ay)"])
 monthly = [
-    ("Bakım", 800),
-    ("Premium Support 7/24", 1500),
-    ("Reklam Yönetimi", 1500),
+    ("Basit Destek — Basic paket", 500),
+    ("Bakım (Standart/Premium)", 1200),
+    ("Premium Support 7/24", 2500),
+    ("Reklam Yönetimi (Basic pakette YOK)", 2500),
     ("E-Commerce aylık", 500),
 ]
 for i, (name, price) in enumerate(monthly):
@@ -249,6 +253,46 @@ mc.border = BOX
 
 for col, w in zip("ABCD", [30, 16, 12, 16]):
     ws.column_dimensions[col].width = w
+
+# ---------------------------------------------------------------- 3b. Basic Paket Kapsam
+ws = wb.create_sheet("Basic Paket Kapsam")
+_title(ws, "Basic Paket — Teknik Kapsam  |  3.000₺ anahtar teslim", 3)
+
+ws["A3"] = ("AMAÇ: Müşterinin işini tanıtan + iletişim bilgisi sunan basit vitrin. "
+            "Ziyaretçiyi müşterinin kendisine yönlendirir. Profesyonel tasarım hedefi YOK.")
+ws["A3"].font = BOLD
+ws["A3"].alignment = WRAP
+ws.merge_cells("A3:C4")
+
+_header_row(ws, 6, ["Bölüm / Özellik", "Kapsam", "Dahil mi"])
+_rows(ws, 7, [
+    ["Sayfa yapısı", "Tek index sayfası. Ek sayfa yok.", "✓"],
+    ["Header", "1 adet üst başlık / menü.", "✓"],
+    ["Tanıtım görseli (hero)", "Header altında ana sayfayı sunan görsel tarzı blok. "
+     "Profesyonel site tasarımı değil.", "✓"],
+    ["Kartlar", "Hero altında işi / hizmetleri tanıtan kart bloğu.", "✓"],
+    ["Footer / kapanış", "En altta iletişim bilgileri (telefon, adres, sosyal). Yeterli.", "✓"],
+    ["Logo", "Basit logo yapımı.", "✓"],
+    ["Responsive", "Mobil / tablet / masaüstü uyum — GARANTİ (Basic'te bile).", "✓"],
+    ["Hover efektleri", "Kart ve buton hover geçişleri.", "✓"],
+    ["Renk paleti", "Standart palet. Profesyonel olması şart değil.", "✓"],
+    ["Domain + canlıya alma", "Domain alımı ve yayına alma dahil.", "✓"],
+    ["Ek sayfa (Hakkımızda, Ürünler vb.)", "Sayfa başı ayrı ücret.", "✗"],
+    ["Reklam yönetimi", "Basic pakette sunulmaz.", "✗"],
+    ["Profesyonel / özel tasarım, animasyon", "Standart / Premium paket.", "✗"],
+    ["E-commerce / online satış", "Ayrı modül.", "✗"],
+], widths=[30, 52, 10], accent_first=True)
+
+r = 22
+ws.cell(row=r, column=1, value="OPSİYONEL — Basit Destek: 500₺").font = BOLD
+ws.cell(row=r, column=1).fill = FILL_ACCENT
+ws.merge_cells(f"A{r}:C{r}")
+ws.cell(row=r + 1, column=1,
+        value="Kapsam: hata düzeltme, içerik & görsel değiştirme, iletişim bilgisi güncelleme.").alignment = WRAP
+ws.merge_cells(f"A{r+1}:C{r+1}")
+ws.cell(row=r + 2, column=1,
+        value="AÇIK SORU: 500₺ aylık mı, talep başı mı? Akif netleştirecek.").font = NOTE
+ws.merge_cells(f"A{r+2}:C{r+2}")
 
 # ---------------------------------------------------------------- 4. Müşteri Takip
 ws = wb.create_sheet("Müşteri Takip")

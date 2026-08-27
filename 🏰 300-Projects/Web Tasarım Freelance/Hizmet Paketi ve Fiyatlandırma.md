@@ -23,9 +23,22 @@ Domain + DNS + canlıya alma dahil. Hızlı iş, kısa hazırlanma.
 
 | Paket | Tasarım Tipi | Hazırlanma | Fiyat |
 |---|---|---|---|
-| **Basic** | Standart tasarım, responsive, interaktif | 2-3 gün | **2.000₺** |
+| **Basic** | Basit vitrin: header + tanıtım görseli + kartlar + iletişim footer. Responsive garanti, hover efektleri. Profesyonel tasarım/renk paleti değil. | 2-3 gün | **3.000₺** |
 | **Standart** | Gelişmiş tasarım, daha fazla özellik | 4-7 gün | **5.000₺** |
 | **Premium** | Video-scroll animasyonlu, profesyonel | 10-14 gün | **12.000₺** |
+
+### Basic Paket — Teknik Kapsam
+
+**Amaç:** Müşterinin işini tanıtan + iletişim bilgisi sunan basit vitrin. Ziyaretçiyi müşterinin kendisine yönlendirir. Profesyonel tasarım hedefi yok.
+
+- Tek index sayfası (ek sayfa yok)
+- Yapı: 1 header → tanıtım görseli (hero, profesyonel tasarım değil) → kartlar → iletişim footer
+- Basit logo yapımı
+- Responsive garanti (Basic'te bile), kart/buton hover efektleri
+- Standart renk paleti (profesyonel olması şart değil)
+- Domain + canlıya alma dahil
+- **Reklam yönetimi Basic pakette yok**
+- **Opsiyonel Basit Destek — 500₺:** hata düzeltme, içerik & görsel değiştirme, iletişim bilgisi güncelleme *(aylık mı / talep başı mı — netleştirilecek)*
 
 ---
 
@@ -45,29 +58,35 @@ Müşteri "Ürünler sayfası", "Hakkımızda", "İletişim" vb. isterse, her sa
 
 Müşteri aylık destek/bakım isterse seçer. Kalite seviyesine göre fiyat değişir.
 
-### Bakım Paketi (Content Update + Monitoring)
+### Bakım Paketi (Content Update + Monitoring + QA)
+
+*Aylık sayfa düzenleme, QA işlemleri, monitoring, teknik destek içerir.*
 
 | Paket | Detay | Fiyat/ay |
 |---|---|---|
-| **Basic** | Text/görsel update, monitoring, temel destek | 300₺ |
-| **Standart** | Regular updates, SEO temel, monitoring, destek | 600₺ |
-| **Premium** | Kapsamlı updates, 24/7 monitoring, advanced SEO | 1.000₺ |
+| **Basic** | Text/görsel update (2-3 düzenleme/ay), monitoring, temel QA | 800₺ |
+| **Standart** | Regular updates (4-5 düzenleme/ay), SEO temel, monitoring, QA | 1.200₺ |
+| **Premium** | Kapsamlı updates (6-10 düzenleme/ay), 24/7 monitoring, advanced SEO, full QA | 1.800₺ |
 
-### Premium Support (Konsultasyon + Strategy + Raporlar)
+### Premium Support 7/24 (Konsultasyon + Strategy + 24/7 Destek)
 
-| Paket | Detay | Fiyat/ay |
-|---|---|---|
-| **Basic** | Haftalık raporlar, email destek | 500₺ |
-| **Standart** | Haftalık raporlar, strategy danışmanlığı, priority destek | 1.000₺ |
-| **Premium** | Haftalık detaylı raporlar, monthly strategy call, 24/7 priority destek | 1.500₺ |
-
-### Reklam Yönetimi (Social Media + Google Ads)
+*Haftalık/aylık raporlar, strategy danışmanlığı, acil sorun için 24/7 erişim (on-call).*
 
 | Paket | Detay | Fiyat/ay |
 |---|---|---|
-| **Basic** | Google Ads temel kurulum ve yönetimi | 800₺ |
-| **Standart** | Google Ads + Instagram Ads, haftalık optimizasyon | 1.500₺ |
-| **Premium** | Google + Instagram + LinkedIn, advanced strategy, daily monitoring | 2.500₺ |
+| **Basic** | Haftalık raporlar, email/WhatsApp destek (iş saatleri içi) | 1.500₺ |
+| **Standart** | Haftalık raporlar, strategy danışmanlığı, priority 24/7 destek | 2.500₺ |
+| **Premium** | Haftalık detaylı raporlar, monthly strategy call, 24/7 priority destek, dedicated contact | 4.000₺ |
+
+### Reklam Yönetimi (Google Ads + Social Media Management)
+
+*Devam eden kampanya yönetimi, A/B testing, optimizasyon, raporlama.*
+
+| Paket | Detay | Fiyat/ay |
+|---|---|---|
+| **Basic** | Google Ads kurulum + aylık optimizasyon + rapor | 1.500₺ |
+| **Standart** | Google Ads + Instagram Ads, haftalık optimizasyon, A/B testing, rapor | 2.500₺ |
+| **Premium** | Google + Instagram + LinkedIn, daily monitoring, advanced strategy, haftalık rapor + konsültasyon | 4.000₺ |
 
 ---
 
