@@ -112,3 +112,20 @@ Günlükte aynı gün iki oturum işlendi ve ikisi de örtüşüyordu: `compile.
 **Güncellenen:** uretmeden-sat-web-tasarim-satis-hunisi
 
 Kısa günlük, "Basic Paket" demo sitesi üretimindeki (La Dolce Spoon kahve sitesi) somut üretim/QA sorunlarını içeriyordu: Unsplash CDN başarısız olunca SVG dot pattern yerine Pexels'ten gerçek kahve fotoğrafı kullanımı, ve hem hero hem reviews bölümünde krem/koyu arka plan üzerinde sabit metin renginin yeterli kontrast sağlamaması — text-shadow ve arka plana göre değişen yazı rengiyle çözüldü. Bu iki tekrarlayan hata sınıfından tek bir kavram çıkarıldı: web demo üretiminde görsel seçimi ve metin kontrastı QA'sı. Mevcut "üretmeden sat" satış hunisi makalesine bu QA notu bağlantı olarak eklendi (huninin üretim adımının somut bir alt-kontrolü olarak). Bir bağlantı dosyası oluşturuldu. Reviews bölümünün kontrolünün yarım kalması ve push bekleyen commit'ler tek seferlik yapılacaklar olduğundan kavramlaştırılmadı.
+
+## [2026-08-30T19:22:00+03:00] compile | 2026-08-30.md (manual derle)
+
+**Oluşturulan:** yapay-zeka-skill-template-sistemi, ts-en-standart-sorgu-doğruluk-garantisi
+
+**Güncellenen:** (yok)
+
+Kompakt günlükte skill'leştirme stratejisi tanımlandı: her yapılan işin ardından `/komut` template'i
+oluşturarak benzer işleri otomatik hale getirme. Hedef: 6 skill — /mobile-menu-fix (mobil menü),
+/hero-mobile-gap-fix (responsive hero gap), /text-contrast-qa (metin kontrastı QA), /qp02-lookup
+(SAP sorgusu), /standart-sorgu (TS EN standartları), /recete-olcekle (reçete ölçekleme). Ayrı oturum
+notunda TS EN standart koleksiyonu (102 PDF + 5 markdown özeti) ve "yanlış cevap yasak" doğruluk
+kuralı belirtildi. İki kalıcı kavram çıkarıldı ve aralarına dört bağlantı dosyası eklendi: skill sistemi
+↔ standart sorgusu (çünkü standart-sorgu bir skill), skill sistemi ↔ derle komutu (çünkü ilk skill),
+standart sorgusu ↔ standartlar makalesi (referans), standart sorgusu ↔ TY.AK kodları (fabrika uyum).
+Teknik detaylar (skill dosya yapısı, markdown özetlerin tamamlanması, 102 PDF kategorisini) ve açık
+sorunlar (standart revision kontrolü, OneDrive sync) yapılacaklar listesine bırakıldı.
