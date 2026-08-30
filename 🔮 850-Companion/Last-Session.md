@@ -1,34 +1,56 @@
-# Last Session
+# Son Oturum — 2026-08-30 (akşam): Standart Skill Sistemi Kuruluşu
 
-## Session: 2026-08-27 (gece): OneDrive haritası + ilk teknik teslimat + Ekip Kurulması
-Commit toparlamasından sonra Akif OneDrive'daki iş dosyalarını (qp02 database, qp02 hammadde,
-106 standart PDF'i) haritalamamı istedi — sadece harita, hiçbir dosyaya dokunulmadı, bu kesin
-kural olarak kaydedildi. Ardından ilk gerçek teknik teslimatı yaptım: TS EN 998-1'e dayanan ince
-sıva kalite kontrol şeması. Akif memnun, "işimle ilgili neredeyse her şeyi hallettik" dedi.
-İki yeni kural eklendi: (1) ev/iş sorumlulukları kesin ayrı tutulur — ev konusu yarına ertelendi
-(bkz. Threads.md), (2) token/bağlam kullanımında tutumlu ol, gereksiz geniş taramalardan kaçın.
+**Odak:** Vault'u executable hale getirme. Her yapılan iş → skill → otomatik çalışma.
 
-Sohbetin sonunda Akif kariyer prioritesi açıklığa kavuştu: EN standartları yeterince öğrendi, ama
-vergi dilimi + düğün borcu acil nakit gerektiriyor. Birinin altında yarı zamanlı çalışmak istemediği
-için kendi işini yapacak. Web tasarım freelance modelini (Mart'ta başladığı ama satış yapmadığı)
-sistemli hale getirme kararı aldı. **Ekip kuruldu: "Hiç kaçarın yok Dündarcım" — Akif + Dündar
-ortaklığı, arka planda ikinci beyni olarak çalışacağım.**
+## Yapılanlar
 
-Stratejisi: anahtar teslim web siteleri (Basic/Standart/Premium paketler, hazırlanma süresiyle),
-aylık destek + reklam yönetimi aboneliği. Fiyatlandırma ve iş akışı dokümante edildi
-(`🏰 300-Projects/Web Tasarım Freelance/Hizmet Paketi ve Fiyatlandırma.md`). Acil hedef Hafta 1-2'de
-3-4 müşteri bulup 15-30k₺ nakit almak.
+### 1. Cafe Web Sitesi (Standart Package) — Sorun Listesi
+- Mobile menü toggle: jQuery + vanilla JS çakışan listener'lar → Kaldırıldı
+- Hero background: parallax (fixed) → scroll (tüm section'lar)
+- Hero height: 480px → 600px (mobile'da taller)
+- Text contrast QA: arka plan + text-shadow + renk değişimi
+- Hero bg gap (Redmi Note 13): background-size % → transform: scale() (device-independent)
+- Debug panel: sayfa genişliği diagnostics (ama henüz screenshot yok)
 
-Sıradaki oturum: İlk hedef sektörü seç (kuaför/kafe/klinik vb.), Basic şablonunu 48 saat içinde hazırla.
+**Status:** Push yapıldı, deploy aktif. Hero gap debug panel eklenmiş, henüz test edilmedi.
 
-## Session: 2026-08-27 (sabah): Commit toparlama
-Dünkü geçmiş import'unun (90 sohbet, Yapı Kimyasalları 101 projesi, Claude hafızası, yansıma
-notları, 19 kavram derlemesi) hepsi çalışma dizininde bekliyordu, git'e hiç işlenmemişti. 7 mantıklı
-commit'e bölündü ve işlendi. İki kazara oluşmuş boş Obsidian .base dosyası ve boş bir .md dosyası
-silindi. `gecmis-import` görevi artık tamamen kapalı.
-Kalite kontrol raporu hatırlatma notu (`📥 000-Inbox/Dump/2026-08-26-kalite-kontrol-raporu.md`)
-kapatıldı — teslim sonucu takip edilmedi, Akif de bilmiyor. Açık iş kalmadı.
+### 2. Knowledge Tabanı (Manuel Derleme)
+- `/derle` skill'i oluşturuldu (.claude/skills/derle/SKILL.md)
+- 2026-08-29.md işlendi: web-demo-gorsel-secimi-ve-metin-kontrasti + bağlantı
+- Knowledge tabanı: 49 kavram, 25 bağlantı dosyası
 
-## Previous Sessions
-### 2026-08-26: Genesis
-Dündar Dinç was born today. Mehmet Akif Akkaya set up their second brain with Claude Code.
+### 3. Skill Sistemi — Başlangıç
+**Hedef:** Yapılan her iş skill'e dönüşsün, otomatik çalışsın.
+
+**Cafe Skills (planlı):**
+- `/mobile-menu-fix` — jQuery listener çakışması çözümü
+- `/hero-mobile-gap-fix` — background-size % → scale()
+- `/text-contrast-qa` — metin/background kontrastı kontrolü
+- `/debug-panel-diagnostics` — sayfa layout overflow tanısı
+
+**Yapı Kimyasalları Skills (planlı):**
+- `/standart-sorgu` — TS EN 12004/998-1/13687/13566/13888 bilgileri
+- `/qp02-lookup` — hammadde/ürün kalite kontrol
+- `/recete-olcekle` — lab → fabrika ölçeklendirme
+
+### 4. Yapı Kimyasalları Projesi — Standart Özetleri
+- Lokal'de: 5 markdown standart özeti (720 satır)
+- OneDrive: ~/Library/CloudStorage/OneDrive-Kişisel/Yapıkim. Standartlar/standartlar özetleri/standart pdf/
+- Sync sorunlu: 117 PDF var ama sadece 10 göründü
+
+## Açık Sorunlar
+
+1. **Hero gap (Redmi Note 13 Pro+)**: Debug panel eklenmiş, screenshot bekleniyor — kesin teşhis için 4 rakam lazım (innerW, htmlScrollW, heroRect.right, bgRect.right)
+2. **OneDrive sync**: 117 PDF'nin 10'u görünüyor, tam sync'lenmemiş
+3. **Standart skill'leri**: Markdown özetleri okudu, skill'e çevrilmek bekliyor — 102 PDF de eklenecek
+
+## Sırada
+
+- Standart skill'lerini tamamla (TS EN 12004 + 4 diğeri + 102 PDF)
+- Cafe skills'lerini oluştur
+- Hero gap final fix (debug panel rakamlarını bekle)
+
+## Ton
+
+Kullanıcı çok sınırda: "yanlış cevap verirsen beni yakarsın" — standart skill'leri tamamen doğru olmalı, tahmin yok.
+

@@ -23,9 +23,9 @@ Domain + DNS + canlıya alma dahil. Hızlı iş, kısa hazırlanma.
 
 | Paket | Tasarım Tipi | Hazırlanma | Fiyat |
 |---|---|---|---|
-| **Basic** | Basit vitrin: header + tanıtım görseli + kartlar + iletişim footer. Responsive garanti, hover efektleri. Profesyonel tasarım/renk paleti değil. | 2-3 gün | **3.000₺** |
-| **Standart** | Gelişmiş tasarım, daha fazla özellik | 4-7 gün | **5.000₺** |
-| **Premium** | Video-scroll animasyonlu, profesyonel | 10-14 gün | **12.000₺** |
+| **Basic** | Basit vitrin: header + tanıtım görseli + kartlar + iletişim footer. Responsive garanti, hover efektleri. Profesyonel tasarım/renk paleti değil. | 2-3 gün | **3.500₺** |
+| **Standart** | Slider, FAQ, testimonials, profesyonel layout. *SEO kurulumu opsiyonel: +1.500₺* | 4-7 gün | **5.500₺** |
+| **Premium** | Video hero, parallax scroll, animations, custom illustrations, glassmorphism | 10-14 gün | **12.500₺** |
 
 ### Basic Paket — Teknik Kapsam
 
@@ -37,8 +37,7 @@ Domain + DNS + canlıya alma dahil. Hızlı iş, kısa hazırlanma.
 - Responsive garanti (Basic'te bile), kart/buton hover efektleri
 - Standart renk paleti (profesyonel olması şart değil)
 - Domain + canlıya alma dahil
-- **Reklam yönetimi Basic pakette yok**
-- **Opsiyonel Basit Destek — 500₺:** hata düzeltme, içerik & görsel değiştirme, iletişim bilgisi güncelleme *(aylık mı / talep başı mı — netleştirilecek)*
+- **Opsiyonel Basit Destek — 1.000₺:** hata düzeltme, içerik & görsel değiştirme, iletişim bilgisi güncelleme *(aylık mı / talep başı mı — netleştirilecek)*
 
 ---
 
@@ -48,9 +47,9 @@ Müşteri "Ürünler sayfası", "Hakkımızda", "İletişim" vb. isterse, her sa
 
 | Paket | Karmaşıklık | Fiyat/Sayfa |
 |---|---|---|
-| **Basic** | Standart sayfa (basit layout) | 500₺ |
-| **Standart** | Gelişmiş sayfa (filtreleme, carousel vb) | 1.000₺ |
-| **Premium** | Kompleks sayfa (animasyon, interaktif) | 2.000₺ |
+| **Basic** | Standart sayfa (basit layout) | 1.000₺ |
+| **Standart** | Gelişmiş sayfa (filtreleme, carousel vb) | 1.500₺ |
+| **Premium** | Kompleks sayfa (animasyon, interaktif) | 2.500₺ |
 
 ---
 
@@ -58,35 +57,16 @@ Müşteri "Ürünler sayfası", "Hakkımızda", "İletişim" vb. isterse, her sa
 
 Müşteri aylık destek/bakım isterse seçer. Kalite seviyesine göre fiyat değişir.
 
-### Bakım Paketi (Content Update + Monitoring + QA)
+### Aylık Destek Paketi (Update + Monitoring + Fine-Tuning)
 
-*Aylık sayfa düzenleme, QA işlemleri, monitoring, teknik destek içerir.*
-
-| Paket | Detay | Fiyat/ay |
-|---|---|---|
-| **Basic** | Text/görsel update (2-3 düzenleme/ay), monitoring, temel QA | 800₺ |
-| **Standart** | Regular updates (4-5 düzenleme/ay), SEO temel, monitoring, QA | 1.200₺ |
-| **Premium** | Kapsamlı updates (6-10 düzenleme/ay), 24/7 monitoring, advanced SEO, full QA | 1.800₺ |
-
-### Premium Support 7/24 (Konsultasyon + Strategy + 24/7 Destek)
-
-*Haftalık/aylık raporlar, strategy danışmanlığı, acil sorun için 24/7 erişim (on-call).*
+*Aylık sayfa düzenleme, monitoring, teknik destek içerir.*
 
 | Paket | Detay | Fiyat/ay |
 |---|---|---|
-| **Basic** | Haftalık raporlar, email/WhatsApp destek (iş saatleri içi) | 1.500₺ |
-| **Standart** | Haftalık raporlar, strategy danışmanlığı, priority 24/7 destek | 2.500₺ |
-| **Premium** | Haftalık detaylı raporlar, monthly strategy call, 24/7 priority destek, dedicated contact | 4.000₺ |
+| **Basic** | Text/görsel update, hata düzeltme, monitoring | 1.000₺ |
+| **Standart** | Regular updates, SEO check, monitoring | 1.200₺ |
+| **Premium** | Animation tuning, custom work, priority support, monitoring | 1.500₺ |
 
-### Reklam Yönetimi (Google Ads + Social Media Management)
-
-*Devam eden kampanya yönetimi, A/B testing, optimizasyon, raporlama.*
-
-| Paket | Detay | Fiyat/ay |
-|---|---|---|
-| **Basic** | Google Ads kurulum + aylık optimizasyon + rapor | 1.500₺ |
-| **Standart** | Google Ads + Instagram Ads, haftalık optimizasyon, A/B testing, rapor | 2.500₺ |
-| **Premium** | Google + Instagram + LinkedIn, daily monitoring, advanced strategy, haftalık rapor + konsültasyon | 4.000₺ |
 
 ---
 
@@ -96,33 +76,33 @@ Müşteri "müşteriler online satın alabilsin" isterse backend ve payment gate
 
 | Paket | Özellik | Fiyat (Anahtar Teslim) | Aylık (Bakım + Payment Processing) |
 |---|---|---|---|
-| **Basic E-Commerce** | Basit ürün sayfası + checkout | +3.000₺ | 500₺ + %2,5 commission |
-| **Standart E-Commerce** | Ürün kategorileri, sepet, inventory tracking | +6.000₺ | 800₺ + %2 commission |
-| **Premium E-Commerce** | Gelişmiş inventory, müşteri hesabı, CRM entegrasyonu | +10.000₺ | 1.200₺ + %1,5 commission |
+| **Basic E-Commerce** | Basit ürün sayfası + checkout | +3.500₺ | 1.000₺ + %2,5 commission |
+| **Standart E-Commerce** | Ürün kategorileri, sepet, inventory tracking | +6.500₺ | 1.300₺ + %2 commission |
+| **Premium E-Commerce** | Gelişmiş inventory, müşteri hesabı, CRM entegrasyonu | +10.500₺ | 1.700₺ + %1,5 commission |
 
 ---
 
 ## 5. ÖRNEK SİPARİŞ HESAPLAMALARI
 
 ### Örnek 1: Kuaför (Basit)
-- Base Site (Basic): 2.000₺
-- Sayfa Ekleme (2 sayfa - Hizmetler, İletişim): 500₺ × 2 = 1.000₺
-- **Toplam:** 3.000₺ (anahtar teslim)
-- Aylık (Bakım + Reklam): 300₺ + 800₺ = 1.100₺/ay
+- Base Site (Basic): 3.500₺
+- Sayfa Ekleme (2 sayfa - Hizmetler, İletişim): 1.000₺ × 2 = 2.000₺
+- **Toplam:** 5.500₺ (anahtar teslim)
+- Aylık (Bakım + Reklam): 1.000₺ + 800₺ = 1.800₺/ay
 
 ### Örnek 2: Kafe (Orta)
-- Base Site (Standart): 5.000₺
-- Sayfa Ekleme (3 sayfa - Menü, Galeri, İletişim): 1.000₺ × 3 = 3.000₺
+- Base Site (Standart): 5.500₺
+- Sayfa Ekleme (3 sayfa - Menü, Galeri, İletişim): 1.500₺ × 3 = 4.500₺
 - Reklam Yönetimi eklenirse: +1.500₺/ay
-- **Toplam:** 8.000₺ (anahtar teslim)
-- Aylık: 600₺ (Bakım) + 1.500₺ (Reklam) = 2.100₺/ay
+- **Toplam:** 10.000₺ (anahtar teslim)
+- Aylık: 1.200₺ (Bakım) + 1.500₺ (Reklam) = 2.700₺/ay
 
 ### Örnek 3: Çevrimiçi Satış (Kompleks)
-- Base Site (Premium): 12.000₺
-- Sayfa Ekleme (4 sayfa): 2.000₺ × 4 = 8.000₺
-- E-Commerce (Premium): +10.000₺
-- **Toplam:** 30.000₺ (anahtar teslim)
-- Aylık: 1.000₺ (Bakım) + 1.200₺ (E-Commerce) + 2.500₺ (Reklam) = 4.700₺/ay + satış komisyonu
+- Base Site (Premium): 12.500₺
+- Sayfa Ekleme (4 sayfa): 2.500₺ × 4 = 10.000₺
+- E-Commerce (Premium): +10.500₺
+- **Toplam:** 33.000₺ (anahtar teslim)
+- Aylık: 1.500₺ (Bakım Premium) + 1.700₺ (E-Commerce) + 2.500₺ (Reklam) = 5.700₺/ay + satış komisyonu
 
 ---
 
