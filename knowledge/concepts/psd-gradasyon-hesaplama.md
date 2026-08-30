@@ -1,10 +1,10 @@
 ---
 title: PSD ve Gradasyon Hesaplaması
-aliases: [Particle Size Distribution, Fuller-Thompson formülü, tane boyutu dağılımı, EKK n katsayısı]
+aliases: [Particle Size Distribution, Fuller-Thompson formülü, tane boyutu dağılımı, EKK n katsayısı, reçete ağırlıklı teorik PSD]
 tags: [yapi-kimyasallari, kalite-kontrol, formulasyon, istatistik]
-sources: [import-2026-06-part-001.md]
+sources: [import-2026-06-part-001.md, import-2026-07-part-001.md]
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # PSD ve Gradasyon Hesaplaması
@@ -18,6 +18,9 @@ PSD (Particle Size Distribution / tane boyutu dağılımı), bir toz malzemenin 
 - n katsayısı ürün tipine göre tahmin edilebilir (ince sıva 0.25-0.30, seramik yapıştırıcısı 0.30-0.40, beton 0.50) ama en doğru yöntem **En Küçük Kareler (EKK)** ile gerçek ölçüm verisinden hesaplamaktır: `log(P/100) = n × log(d/D_max)` doğrusallaştırması üzerinden `n = Σ(x·y) / Σ(x²)` formülüyle bulunur (x=log(d/D_max), y=log(P/100), tava ve D_max hariç ara elekler kullanılır).
 - Spec (alt-üst sınır) belirlemede istatistiksel yöntem kullanılabilir: gerçek ölçümlerin ortalaması ± 2×standart sapma, %95 güven aralığını verir; ancak üretim stabilitesi bozulan dönemlerde (kayma sorunu gibi) sorunsuz dönemin verisi referans alınmalıdır.
 - Ar-Ge/kıyaslama amaçlı kullanılan Excel şablonlarında spec orta noktasından değil, gerçek ölçüm verisinden EKK ile n hesaplamak tercih edilir çünkü farklı fabrika/kalker kaynaklarını karşılaştırmaya izin verir.
+- Rutin üretimde elek analizi hiç yapılmayan ürün gruplarında (ör. seramik yapıştırıcısı/weber.kol serisi) **reçete ağırlıklı teorik PSD** yöntemi kullanılır: her hammaddenin (kalker, çimento, kimyasallar) kendi ölçülmüş elek dağılımı reçetedeki ağırlık oranıyla çarpılıp toplanır; veri bulunmayan çok ince katkılar (çimento, RDP, selüloz eter) "tamamen ince, tümü tava" varsayılır.
+- Hem ölçülmüş gerçek parti verisinden (ampirik n) hem reçete ağırlıklı teorik hesaptan (teorik n) çıkarılan n katsayıları karşılaştırıldığında, ampirik n teorik n'den sistematik olarak biraz (örn. sıva grubunda ~0.04) daha yüksek çıkabilir — bu, "ince bileşenler her elekten tam geçer" varsayımının hafif iyimser olduğuna işaret eder ve formülasyon çalışmalarında düzeltme faktörü olarak kullanılabilir.
+- Elek bazında spec aralığı, sadece kaba agreganın katkı verdiği eleklerde hammaddenin kendi ölçülmüş min-max (p5-p95) aralığının ürünün reçetedeki hammadde oranıyla ölçeklenmesiyle kurulabilir; en ince elekte (tava) ise tüm reçete bileşenleri (agrega + bağlayıcı + kimyasallar) birlikte değerlendirilip tümleyen (100 − diğer sınırların toplamı) olarak hesaplanır.
 
 ## Detaylar
 
@@ -31,7 +34,9 @@ Su oranı tahmini, hammaddelerin D50 ve yoğunluğundan spesifik yüzey alanı (
 
 - [[yapi-kimyasallari-urun-standartlari]] — EN 1015-1 (elek analizi) ve EN 12808 serisi gibi test standartları, PSD/gradasyon hesaplamasının dayandığı elek analizini resmi olarak tanımlar.
 - [[kalker-kayma-sorunu-vaka-analizi]] — Bir C2 yapıştırıcısında yaşanan kayma (slip) sorunu, kalker agreganın tava payındaki (ince fraksiyon) PSD değişimiyle kök neden analizi yapılarak açıklanmış ve spec revizyonu bu hesaplama yöntemiyle önerilmiştir.
+- [[recete-olceklendirme-ve-fabrika-entegrasyonu]] — Reçete ağırlıklı teorik PSD hesaplaması, ölçeklendirme dosyasındaki hammadde ağırlık oranlarını doğrudan girdi olarak kullanır.
 
 ## Kaynaklar
 
 - import-2026-06-part-001.md
+- import-2026-07-part-001.md

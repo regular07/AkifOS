@@ -48,6 +48,9 @@ birleştirilmesi seçenekleri değerlendirilmiştir.
 
 - [[excel-grafik-olusturma]] — bu tablodaki veri aralığı (başlık satırı dahil)
   doğrudan bir sütun grafiğin veri kaynağı olarak kullanılır.
+- [[excel-python-ile-iteratif-dosya-uretimi]] — bu tablo deseni (sekmeler, renk
+  kodları, formüller dahil) elle değil, yeniden çalıştırılabilen bir Python
+  script'iyle de üretilip iteratif güncellenebilir.
 
 ## Kaynaklar
 

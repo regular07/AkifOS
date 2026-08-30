@@ -4,7 +4,7 @@ aliases: [QP02 format, SAP kalite kontrol tablosu, kontrol karakteristiği tablo
 tags: [yapi-kimyasallari, kalite-kontrol, sap, excel]
 sources: [import-2026-06-part-001.md]
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # SAP QP02 Hammadde/Ürün Kalite Kontrol Formatı
@@ -29,7 +29,9 @@ Fabrikanın PSD/gradasyon çalışmalarında bu format doğrudan girdi kaynağı
 
 - [[psd-gradasyon-hesaplama]] — Bu formattaki elek analizi satırları (elek üstü kalan gram/yüzde), PSD ve gradasyon hesaplamasının ham veri girdisidir.
 - [[kalker-kayma-sorunu-vaka-analizi]] — Kayma sorununun kök nedeni, bu formatta tutulan kırma eleme dosyasındaki tarihsel elek analizi verileri incelenerek tespit edilmiştir.
+- [[sap-qm-kalite-kontrolde-kalan-stok-sorun-giderme]] — QP02'de kayıtlı muayene partisi bulunamadığında, sorunun SAP tarafındaki (QA32, MB51, MB5B) işlemsel kök nedenini bulma sürecidir.
 
 ## Kaynaklar
 
 - import-2026-06-part-001.md
+- import-2026-07-part-001.md

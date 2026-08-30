@@ -25,6 +25,7 @@ Süreç bir retro temalı ürün tanıtım landing page'i ile başladı; kullan�
 - [[github-pages-ile-statik-site-yayinlama]] — Üretilen örnek landing page'ler bu yöntemle yayınlanıp müşterilere canlı demo olarak sunuluyor.
 - [[cloudflare-pages-ile-statik-site-yayinlama]] — İlk landing page örneği bu servis üzerinden domain'e bağlanmaya çalışıldı.
 - [[rakip-site-analizi-ve-yeniden-tasarim]] — Bu süreçte öğrenilen landing page üretim tekniği, gerçek bir müşteri projesinde (yangın güvenlik firması) uygulanmaya başlandı.
+- [[uretmeden-sat-web-tasarim-satis-hunisi]] — Bu stratejinin "önce demo, sonra ücretli kurulum" fikrini sabit fiyatlı Basic Paket ve aylık destek aboneliğiyle somutlaştıran güncel sürümü.
 
 ## Kaynaklar
 - import-2026-03-part-001.md
