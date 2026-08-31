@@ -129,3 +129,11 @@ kuralı belirtildi. İki kalıcı kavram çıkarıldı ve aralarına dört bağl
 standart sorgusu ↔ standartlar makalesi (referans), standart sorgusu ↔ TY.AK kodları (fabrika uyum).
 Teknik detaylar (skill dosya yapısı, markdown özetlerin tamamlanması, 102 PDF kategorisini) ve açık
 sorunlar (standart revision kontrolü, OneDrive sync) yapılacaklar listesine bırakıldı.
+
+## [2026-08-31T21:17:36+03:00] compile | 2026-08-29.md
+
+**Oluşturulan:** sablon-repo-ve-musteri-proje-reposu-ayrimi, tek-sayfa-isletme-sitesi-standart-bolum-yapisi
+
+**Güncellenen:** web-demo-gorsel-secimi-ve-metin-kontrasti
+
+2026-08-29.md yeniden derlendi; görsel seçimi ve metin kontrastı QA'sı zaten kavramlaştırılmıştı, bu turda günlükteki iki yeni kalıcı desen çıkarıldı: (1) işin iki git reposunda yürütülmesi — yeniden kullanılabilir `basic-template` şablonu ile müşteriye özel `cafe` projesinin ayrılması ve ikisinin ayrı push edilmesi, (2) kafe/restoran tek sayfa sitesinin sabit bölüm iskeleti (hero → menu → gallery → about → reviews → slider → FAQ → contact). Mevcut kontrast QA makalesine bölüm bölüm çok-commit'li QA döngüsü (hero onaylı, reviews ayrı tur) ve iki-repo iş akışı `Güncelleme` notu olarak eklendi. İki yeni bağlantı oluşturuldu: şablon ayrımı ↔ "üretmeden sat" hunisi (şablon altyapısı açık başlığını çözer), bölüm iskeleti ↔ kontrast QA'sı (QA kapsamını sabitler).
