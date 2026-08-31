@@ -53,13 +53,27 @@ isim önerisinde önce WebSearch ile genel çakışma kontrolü yapılmalı**, k
 ücretsiz marka araştırma sistemi. WebSearch sonucu resmi tescil garantisi DEĞİLDİR, sadece
 genel görünürlük taraması yapar.
 
-## Şu Anki Temiz (WebSearch'te çakışma bulunmayan) Adaylar
+## Final Karar: Deeploico
 
-- **Yansı** — yansıma, cam/ekran/vitrin metaforuna bağlı, zarif, kısa, Türkçe
-- **Vitrus** — vitrin+cam kökünden uydurma kelime, kurumsal ve benzersiz duruyor
+**"Deeploico"** — "deploy" (yayına alma/canlıya çıkarma) köküne dayanan, tamamen uydurma/
+benzersiz bir kelime. WebSearch'te üç ayrı açıdan (genel arama, domain, sosyal medya)
+sıfır çakışma bulundu — hiçbir şirket, trademark, domain ya da sosyal medya hesabı yok.
 
-Bu ikisi kullanıcıya sunuldu, henüz final karar verilmedi — TürkPatent'te resmi kontrol
-kullanıcı tarafından yapılacak.
+**Neden kazandı:**
+- Anlamı kendini anlatıyor: "biz canlıya/yayına alırız" — web tasarım hizmetiyle birebir örtüşüyor
+- Rakipsiz olduğu için SEO'da neredeyse anında #1 sıraya çıkma potansiyeli var (arama
+  yapıldığında karışacağı başka bir marka/şirket yok)
+- Kısa, benzersiz yazılışı sayesinde yanlışlıkla başka birinin alması ihtimali çok düşük
+
+**Yolda elenen ama temiz çıkan aday:** Deployiz (deploy + Türkçe "-iz" eki, "biz yaparız"
+anlamı) — Deeploico'ya göre ikinci sıradaydı, "deploy" köküyle daha genel bir tanınırlık/
+karışma potansiyeli taşıdığı için tercih edilmedi.
+
+**Sıradaki adımlar (kullanıcı yapacak, henüz tamamlanmadı):**
+1. https://www.turkpatent.gov.tr/arastirma-yap üzerinden resmi son kontrol
+2. Domain (`deeploico.com` / `.com.tr`) kayıt — "temiz kelime" fırsat penceresi süresiz
+   açık kalmaz, kesinleştiyse hızlı alınmalı
+3. Logo/görsel kimlik tasarımı (sıradaki oturum konusu)
 
 ## İlgili Kavramlar
 - [[uretmeden-sat-web-tasarim-satis-hunisi]] — bu marka, freelance web tasarım işinin genel şemsiyesi

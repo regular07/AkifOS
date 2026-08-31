@@ -37,6 +37,10 @@ sosyal medya footer. Art arda gelen mobil taşma bug'ları kök sebebine inilere
 Canlı: https://regular07.github.io/standart-paket/ — kullanıcı memnun ("eline sağlık
 sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
 
+**Marka ismi kesinleşti: Deeploico** (2026-08-31). 11 turluk isim arayışı sonunda karar
+verildi — detay: [[kalem-kod-marka-isim-arastirmasi]]. TODO: TürkPatent kontrolü + domain
+kaydı (kullanıcı yapacak), sonra logo/görsel kimlik tasarımına geçilecek.
+
 **AÇIK SORU (Akif düşünecek, arada sor):** Basit Destek 500₺ → 1.000₺ oldu, aylık mı talep başı mı?
 **TODO:** Portfolio sitesi (regular07.github.io ana sayfa), müşteri demo'su, standart-paket'ten
 diğer sektörlere (kuaför, restoran) türetme, eski `cafe` reposunun silinip silinmeyeceğine karar
