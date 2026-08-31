@@ -29,12 +29,14 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   diye bak; gerekmedikçe büyük çıktıları tam dökme, hedefli oku. **neden:** Mehmet Akif Akkaya
   token bütçesinin hızlı tükenmesinden endişeli (2026-08-27), uzun vadeli kullanılabilirlik
   önceliği verimlilikten önce gelir.
-- **kural:** "Ne durumdayız" sorusuna veya yeni oturum başında SADECE en son yapılan işi
-  anlatma — Threads.md'deki TÜM açık thread'leri tara (ev işleri, web tasarım/Deeploico,
-  Yapı Kimyasalları, vb.) ve hepsinin kısa bir özetini birlikte ver. **neden:** Mehmet Akif
-  Akkaya (2026-08-31) "elimde olan tüm işleri bana hatırlatmalısın, ev işi yapı kimyasalları
-  işi hepsi" dedi — sadece son konuşulan konuyu anlatmak diğer alanları unutturuyor,
-  DEHB'si olduğu için bu özellikle tehlikeli.
+- **kural:** "Ne durumdayız"/"ne yaptık" sorusuna veya yeni oturum başında SADECE en son
+  yapılan işi anlatma — `🎯 100-Command-Center/Dashboard.md`'yi oku ve önüne ser (bu dosya
+  Threads.md ile aynı kaynaktan besleniyor, tüm alanların özetini tutuyor: ev, web tasarım/
+  Deeploico, Yapı Kimyasalları, para durumu). **neden:** Mehmet Akif Akkaya (2026-08-31)
+  "elimde olan tüm işleri bana hatırlatmalısın, ev işi yapı kimyasalları işi hepsi" dedi,
+  sonra (2026-09-01) bunun görsel bir dashboard olmasını istedi — sadece son konuşulan
+  konuyu anlatmak diğer alanları unutturuyor, DEHB'si olduğu için bu özellikle tehlikeli.
+  Dashboard.md'yi değiştiren her önemli olayda (yeni görev, kapanan iş, karar) güncel tut.
 - **kural:** Beklemede bırakılan/ertelenen bir görev olursa ("bu iş beklesin unutturma")
   o görevi hem Threads.md'ye hem gerekiyorsa Todoist'e aç uçlu iş olarak işle, sonraki
   "ne durumdayız" özetinde mutlaka yer alsın. **neden:** Mehmet Akif Akkaya (2026-08-31)
