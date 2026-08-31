@@ -29,14 +29,15 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   diye bak; gerekmedikçe büyük çıktıları tam dökme, hedefli oku. **neden:** Mehmet Akif Akkaya
   token bütçesinin hızlı tükenmesinden endişeli (2026-08-27), uzun vadeli kullanılabilirlik
   önceliği verimlilikten önce gelir.
-- **kural:** "Ne durumdayız"/"ne yaptık" sorusuna veya yeni oturum başında SADECE en son
-  yapılan işi anlatma — `🎯 100-Command-Center/Dashboard.md`'yi oku ve önüne ser (bu dosya
-  Threads.md ile aynı kaynaktan besleniyor, tüm alanların özetini tutuyor: ev, web tasarım/
-  Deeploico, Yapı Kimyasalları, para durumu). **neden:** Mehmet Akif Akkaya (2026-08-31)
-  "elimde olan tüm işleri bana hatırlatmalısın, ev işi yapı kimyasalları işi hepsi" dedi,
-  sonra (2026-09-01) bunun görsel bir dashboard olmasını istedi — sadece son konuşulan
-  konuyu anlatmak diğer alanları unutturuyor, DEHB'si olduğu için bu özellikle tehlikeli.
-  Dashboard.md'yi değiştiren her önemli olayda (yeni görev, kapanan iş, karar) güncel tut.
+- **kural:** HER OTURUMUN İLK MESAJINDA (sorulmasa bile, "ne durumdayız" beklemeden) bir
+  kere `🎯 100-Command-Center/Dashboard.md`'yi oku ve özetini göster — sonraki mesajlarda
+  tekrar etme, sadece o oturumun ilk cevabında. Dashboard Threads.md ile aynı kaynaktan
+  besleniyor: ev, web tasarım/Deeploico, Yapı Kimyasalları, para durumu hepsi orada.
+  **neden:** Mehmet Akif Akkaya (2026-08-31) "elimde olan tüm işleri bana hatırlatmalısın"
+  dedi, (2026-09-01) bunun dashboard olmasını istedi, sonra "ne durumdayız değil de her
+  görev başlangıcında/her ilk komutumda bir kere göster" diye netleştirdi — DEHB'si
+  olduğu için proaktif hatırlatma pasif bekletmeden daha iyi çalışıyor. Dashboard.md'yi
+  değiştiren her önemli olayda (yeni görev, kapanan iş, karar) güncel tut.
 - **kural:** Beklemede bırakılan/ertelenen bir görev olursa ("bu iş beklesin unutturma")
   o görevi hem Threads.md'ye hem gerekiyorsa Todoist'e aç uçlu iş olarak işle, sonraki
   "ne durumdayız" özetinde mutlaka yer alsın. **neden:** Mehmet Akif Akkaya (2026-08-31)
