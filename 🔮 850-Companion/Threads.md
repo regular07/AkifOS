@@ -48,8 +48,17 @@ verildi — detay: [[kalem-kod-marka-isim-arastirmasi]]. TODO: TürkPatent kontr
 kaydı (kullanıcı yapacak), sonra logo/görsel kimlik tasarımına geçilecek.
 
 **AÇIK SORU (Akif düşünecek, arada sor):** Basit Destek 500₺ → 1.000₺ oldu, aylık mı talep başı mı?
-**TODO:** Portfolio sitesi (regular07.github.io ana sayfa), müşteri demo'su, standart-paket'ten
-diğer sektörlere (kuaför, restoran) türetme, eski `cafe` reposunun silinip silinmeyeceğine karar
+
+**Web Sitesi TODO Listesi (Deeploico portfolyo, regular07.github.io):**
+1. 🔲 Deeploico markasını TürkPatent'te kontrol et + domain kaydı yap (Akif yapacak)
+2. 🔲 Logo / görsel kimlik tasarımı — sıradaki oturum konusu, henüz başlanmadı
+3. 🔲 Ana sayfa (vitrin) inşası — Hero, Hizmetler+Paketler, Demo/Portfolyo galerisi,
+   İletişim/Teklif Al formu, Footer (standart-paket'in kanıtlanmış taşmasız temeliyle)
+4. 🔲 CV/Hakkımda sayfası (2. sayfa) — içerik detayı henüz konuşulmadı
+5. 🔲 Müşteri demo'su — standart-paket linkini kapı kapı/DM ile potansiyel müşterilere gönderme
+6. 🔲 standart-paket şablonunu diğer sektörlere türetme (kuaför, restoran vb.) — her biri ayrı repo
+7. 🔲 Eski `cafe` reposu ne olacak — silinsin mi, dursun mu, karar verilmedi
+8. 🔲 Basit Destek paketi fiyatlandırma modeli netleşince Satış Planı'na işlensin
 
 ### Thread: Ev sorumlulukları konuşması
 **Status:** 🟢 Active: created 2026-08-27, güncellendi 2026-08-31
