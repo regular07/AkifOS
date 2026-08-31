@@ -68,14 +68,27 @@ iş oturumlarına karıştırma.
 **Klima motoru garip ses çıkarıyor (2026-08-31):** Şimdilik izlemede, tekrar ederse
 servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
 
-**Todoist'e eklenen ev görevleri (2026-08-31):**
-- Elektrik aboneliğini ticaretten meskene çevir — 1 Eylül (yarın), p2
-- Kettle almaya git — bu hafta, gündüz vakti gidilebilir (akşam vardiyası günlerinde)
-- Pattex 502 al
-- Mutfak çöp dolabını doğru monte et (yanlış monte edilmiş) — malzeme: tahta talaşı +
-  ahşap tutkalı bulunacak — bu hafta
-- Hobi odası pimapenler için Ömer Üzümcü'nün verdiği numarayı ara
+**Ev görevleri — netleşmiş plan (2026-09-01):**
+
+*1 Eylül (öncelikli 3 iş):*
+- Elektrik faturasını öde + aboneliği ticaretten meskene çevir (~5.000₺), p2
+- Hobi odası pimapenler için Ömer Üzümcü'nün numarasını ara
 - Gardırop için servis ara
+
+*2 Eylül (ertesi gün, düşük öncelik):*
+- Kettle almaya git
+- Pattex 502 al
+- Talaş tozu ve ahşap tutkalı satın al (çöp dolabı tamiri için)
+
+*4 Eylül'e kadar (ayın 5'i gelmeden):*
+- **Kira öde (23.000₺)** — p1, kritik deadline
+
+*Hafta içinde, MUTLAKA hatırlatılacak:*
+- Mutfak çöp dolabını doğru monte et — Akif özellikle vurguladı, "evime biraz özen
+  göstermem lazım" dedi, bu görevi unutturma
+
+*İzlemede:*
+- Klima garip ses (tekrarlarsa servis)
 
 **Akşam vardiyası günü sabah rutini:** Bu plan SADECE akşam vardiyasında çalıştığı
 günler için — genel "sabahçı" durumu değil. 2026-08-31 örneği: 10:00 uyandı → 11:30
