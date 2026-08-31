@@ -72,7 +72,10 @@ servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
 - Elektrik aboneliğini ticaretten meskene çevir — 1 Eylül (yarın), p2
 - Kettle almaya git — bu hafta, gündüz vakti gidilebilir (akşam vardiyası günlerinde)
 - Pattex 502 al
-- Mutfak çöp dolabını doğru monte et (yanlış monte edilmiş) — bu hafta
+- Mutfak çöp dolabını doğru monte et (yanlış monte edilmiş) — malzeme: tahta talaşı +
+  ahşap tutkalı bulunacak — bu hafta
+- Hobi odası pimapenler için Ömer Üzümcü'nün verdiği numarayı ara
+- Gardırop için servis ara
 
 **Akşam vardiyası günü sabah rutini:** Bu plan SADECE akşam vardiyasında çalıştığı
 günler için — genel "sabahçı" durumu değil. 2026-08-31 örneği: 10:00 uyandı → 11:30
