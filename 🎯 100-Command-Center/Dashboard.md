@@ -21,13 +21,21 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - Bekleyen: qp02 database, qp02 hammadde, standartlar
 
 ## 🏠 Ev İşleri (Todoist — `ev` etiketi)
-- 🔲 Elektrik faturasını öde + aboneliği ticaretten meskene çevir
-- 🔲 Kettle al (bu hafta, gündüz/akşam vardiyası günü)
-- 🔲 Pattex 502 al
-- 🔲 Mutfak çöp dolabını düzelt — malzeme: tahta talaşı + ahşap tutkalı
+**1 Eylül (bugün, öncelikli 3 iş):**
+- 🔴 Elektrik faturasını öde + aboneliği ticaretten meskene çevir (~5.000₺)
 - 🔲 Hobi odası pimapenler için Ömer Üzümcü'nün numarasını ara
 - 🔲 Gardırop için servis ara
-- 👁️ İzlemede: klima garip ses (tekrarlarsa servis)
+
+**2 Eylül (ertesi gün):**
+- 🔲 Kettle al · 🔲 Pattex 502 al · 🔲 Talaş tozu + ahşap tutkalı al
+
+**4 Eylül'e kadar:**
+- 🔴 **Kira öde (23.000₺)** — ayın 5'i gelmeden
+
+**Hafta içinde, MUTLAKA hatırlat:**
+- 🔲 Mutfak çöp dolabını düzelt ("evime özen göstermem lazım" — Akif'in kendi sözü)
+
+**İzlemede:** klima garip ses (tekrarlarsa servis)
 
 ## 💰 Para Durumu
 - [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]] dosyasına bak — gelir/gider/harcama günlüğü orada
