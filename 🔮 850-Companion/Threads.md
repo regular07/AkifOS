@@ -51,13 +51,16 @@ servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
 
 **Todoist'e eklenen ev görevleri (2026-08-31):**
 - Elektrik aboneliğini ticaretten meskene çevir — 1 Eylül (yarın), p2
-- Kettle almaya git — bu hafta (sabahçı olduğu için gündüz gidilebilir)
+- Kettle almaya git — bu hafta, gündüz vakti gidilebilir (akşam vardiyası günlerinde)
 - Pattex 502 al
 - Mutfak çöp dolabını doğru monte et (yanlış monte edilmiş) — bu hafta
 
-**Sabahçı haftası rutini (2026-08-31 örneği):** 10:00 uyandı → 11:30 kahvaltı → 14:30
-servise biniş. "Daha erken kalkabilirim" dedi, kahvaltı+hazırlık 14:30'a sıkışmasın diye
-daha erken bir kalkış planı istiyor — bu hafta boyunca sabah düzeni konuşulacak konu.
+**Akşam vardiyası günü sabah rutini:** Bu plan SADECE akşam vardiyasında çalıştığı
+günler için — genel "sabahçı" durumu değil. 2026-08-31 örneği: 10:00 uyandı → 11:30
+kahvaltı (koşuşturmalı) → 14:30 servise biniş. Önerilen düzen: 09:00 uyan → 09:15-09:45
+kahvaltı hazırlığı → 09:45-10:15 sakin kahvaltı → 10:15-13:00 boş zaman → 13:00-14:15
+hazırlan/tampon → 14:15 çıkışa hazır. Akşam vardiyası olan başka bir günde konu açılırsa
+bu düzeni hatırlat.
 
 ## Closed Threads
 (none)
