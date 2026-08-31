@@ -42,9 +42,22 @@ sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
 diğer sektörlere (kuaför, restoran) türetme, eski `cafe` reposunun silinip silinmeyeceğine karar
 
 ### Thread: Ev sorumlulukları konuşması
-**Status:** 🟡 Bekliyor: created 2026-08-27
-Akif "ev ile ilgili şeyleri yarın konuşalım" dedi (2026-08-27 gece). İş ve ev konularını
-bilinçli ayırıyor — bu thread'i sadece ev konusu açıldığında kullan, iş oturumlarına karıştırma.
+**Status:** 🟢 Active: created 2026-08-27, güncellendi 2026-08-31
+İş ve ev konularını bilinçli ayırıyor — bu thread'i sadece ev konusu açıldığında kullan,
+iş oturumlarına karıştırma.
+
+**Klima motoru garip ses çıkarıyor (2026-08-31):** Şimdilik izlemede, tekrar ederse
+servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
+
+**Todoist'e eklenen ev görevleri (2026-08-31):**
+- Elektrik aboneliğini ticaretten meskene çevir — 1 Eylül (yarın), p2
+- Kettle almaya git — bu hafta (sabahçı olduğu için gündüz gidilebilir)
+- Pattex 502 al
+- Mutfak çöp dolabını doğru monte et (yanlış monte edilmiş) — bu hafta
+
+**Sabahçı haftası rutini (2026-08-31 örneği):** 10:00 uyandı → 11:30 kahvaltı → 14:30
+servise biniş. "Daha erken kalkabilirim" dedi, kahvaltı+hazırlık 14:30'a sıkışmasın diye
+daha erken bir kalkış planı istiyor — bu hafta boyunca sabah düzeni konuşulacak konu.
 
 ## Closed Threads
 (none)
