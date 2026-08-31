@@ -30,8 +30,16 @@ yeniden yazıyoruz. `/derle` komutu manuel derleme için.
 - localhost:8000 → Cafe (demo), localhost:8001 → Basic (demo)
 - Kapı kapı satış ready! 🚀
 
+**2026-08-31:** standart-paket reposu sıfırdan yazıldı (eski `cafe` terk edildi).
+Bootstrap 5 + Swiper.js + vanilla JS, SEO tam donanımlı, filtrelenebilir menü + WhatsApp +
+sosyal medya footer. Art arda gelen mobil taşma bug'ları kök sebebine inilerek çözüldü
+(detay: Last-Session.md, kalıcı bilgi: [[responsive-yatay-tasma-teshis-ve-cozum]]).
+Canlı: https://regular07.github.io/standart-paket/ — kullanıcı memnun ("eline sağlık
+sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
+
 **AÇIK SORU (Akif düşünecek, arada sor):** Basit Destek 500₺ → 1.000₺ oldu, aylık mı talep başı mı?
-**TODO:** Push (Akif), Portfolio sitesi (regular07.github.io), müşteri demo'su
+**TODO:** Portfolio sitesi (regular07.github.io ana sayfa), müşteri demo'su, standart-paket'ten
+diğer sektörlere (kuaför, restoran) türetme, eski `cafe` reposunun silinip silinmeyeceğine karar
 
 ### Thread: Ev sorumlulukları konuşması
 **Status:** 🟡 Bekliyor: created 2026-08-27
