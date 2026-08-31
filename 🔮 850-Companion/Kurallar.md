@@ -29,14 +29,15 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   diye bak; gerekmedikçe büyük çıktıları tam dökme, hedefli oku. **neden:** Mehmet Akif Akkaya
   token bütçesinin hızlı tükenmesinden endişeli (2026-08-27), uzun vadeli kullanılabilirlik
   önceliği verimlilikten önce gelir.
-- **kural:** HER OTURUMUN İLK MESAJINDA (sorulmasa bile, "ne durumdayız" beklemeden) bir
-  kere `🎯 100-Command-Center/Dashboard.md`'yi oku ve özetini göster — sonraki mesajlarda
-  tekrar etme, sadece o oturumun ilk cevabında. Dashboard Threads.md ile aynı kaynaktan
-  besleniyor: ev, web tasarım/Deeploico, Yapı Kimyasalları, para durumu hepsi orada.
-  **neden:** Mehmet Akif Akkaya (2026-08-31) "elimde olan tüm işleri bana hatırlatmalısın"
-  dedi, (2026-09-01) bunun dashboard olmasını istedi, sonra "ne durumdayız değil de her
-  görev başlangıcında/her ilk komutumda bir kere göster" diye netleştirdi — DEHB'si
-  olduğu için proaktif hatırlatma pasif bekletmeden daha iyi çalışıyor. Dashboard.md'yi
+- **kural:** Dashboard hatırlatması İKİ yoldan birden çalışır: (1) "ne durumdayız"/"ne
+  yaptık" sorulduğunda `🎯 100-Command-Center/Dashboard.md`'yi oku ve cevap olarak göster;
+  (2) BUNA EK OLARAK, oturum içinde ara ara (sorulmasa da, konu müsaitken, özellikle bir
+  görev bitiminde) açık/bekleyen işleri kısaca hatırlat — "şu işler kalmıştı, arada bunlara
+  bak" tarzında. Tek seferlik oturum-başı gösterimle sınırlama, sürekli/periyodik olsun.
+  **neden:** Mehmet Akif Akkaya önce "her ilk komutumda bir kere göster" dedi, sonra
+  (2026-09-01) "fikrim değişti, hem soruya cevap olarak yaz hem sürekli hatırlat" diye
+  netleştirdi — DEHB'si olduğu için tek seferlik hatırlatma unutulmaya yetmiyor, tekrar
+  gerekiyor. Abartma: her mesajda değil, doğal aralıklarla/uygun anlarda. Dashboard.md'yi
   değiştiren her önemli olayda (yeni görev, kapanan iş, karar) güncel tut.
 - **kural:** Beklemede bırakılan/ertelenen bir görev olursa ("bu iş beklesin unutturma")
   o görevi hem Threads.md'ye hem gerekiyorsa Todoist'e aç uçlu iş olarak işle, sonraki
