@@ -37,6 +37,12 @@ sosyal medya footer. Art arda gelen mobil taşma bug'ları kök sebebine inilere
 Canlı: https://regular07.github.io/standart-paket/ — kullanıcı memnun ("eline sağlık
 sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
 
+**BEKLEMEDE (2026-08-31):** `git push`/`git remote` için Bash izin kuralı eklenemedi — Claude'un
+kendi izin dosyasını (.claude/settings.local.json) düzenlemesi "auto mode classifier" tarafından
+engelleniyor, chat onayı da yetmiyor. Akif PC başına geçince ya `/permissions` ile ya da dosyayı
+elle düzenleyerek eklemeli: `"Bash(git push *)", "Bash(git remote *)", "Bash(git fetch *)"`.
+O zamana kadar git push'lar Akif'in kendi terminalinden (`!` öneki ile) yapılıyor.
+
 **Marka ismi kesinleşti: Deeploico** (2026-08-31). 11 turluk isim arayışı sonunda karar
 verildi — detay: [[kalem-kod-marka-isim-arastirmasi]]. TODO: TürkPatent kontrolü + domain
 kaydı (kullanıcı yapacak), sonra logo/görsel kimlik tasarımına geçilecek.
