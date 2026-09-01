@@ -43,9 +43,11 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 şirket bu hafta meskene çevirme ekibi göndereceğini söyledi. Aksiyon yoksa 8 Eylül'de
 şikayet başvurusu yapılacak. Detay: [[🔮 850-Companion/Threads|Threads]] → Ev thread'i.
 
-## 💰 Para Durumu
-- [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]] dosyasına bak — gelir/gider/harcama günlüğü orada
-- Harcama yaptığında bana söyle, ben oraya işlerim
+## 💰 Para Durumu — Kar/Kazanç/Borç Yönetimi
+- Eşimin toplam borcu ~459.000₺, aylık ~20.000₺ açık — detay [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]]
+- 🔲 Beklenen: banka promosyonu 105.000₺ (3 iş günü içinde yatacak, 4 Eylül'de kontrol et)
+- 🔲 Akif'in kendi borçları henüz eklenmedi — detaylı yazınca işlenecek
+- Harcama yaptığında bana söyle, oraya işlerim
 
 ## ⚙️ Sistem/Altyapı
 - 🔲 **Beklemede:** git push izin kuralı — PC başında `/permissions` ile eklenecek
