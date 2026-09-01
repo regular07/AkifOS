@@ -37,6 +37,11 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 
 **İzlemede:** klima garip ses (tekrarlarsa servis)
 
+**🔴 ÖNEMLİ, 8 Eylül'e kadar SÜREKLİ takip: Elektrik abonelik/zarar süreci**
+2025 Aralık + 06.03.2026 talepleri hiç yanıtlanmadı. 2026-09-01'de zarar talebi dolduruldu,
+şirket bu hafta meskene çevirme ekibi göndereceğini söyledi. Aksiyon yoksa 8 Eylül'de
+şikayet başvurusu yapılacak. Detay: [[🔮 850-Companion/Threads|Threads]] → Ev thread'i.
+
 ## 💰 Para Durumu
 - [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]] dosyasına bak — gelir/gider/harcama günlüğü orada
 - Harcama yaptığında bana söyle, ben oraya işlerim
