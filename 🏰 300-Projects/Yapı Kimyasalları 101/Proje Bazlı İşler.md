@@ -17,7 +17,8 @@ günlük işler burada değil — onlar [[Rutin İşler]] dosyasında.
 
 ### Yıllık prim şartı görevleri (2026-09-01 güncellendi)
 - 🔲 **SİP girişi** (5 adet) — eski adı "TF5 girişi"ydi, düzeltildi. Henüz başlanmadı.
-- 🔲 **Saha stok kontrolü** — 2/10 yapıldı (15.07.2026, 21.07.2026), 8 kaldı.
+- 🔲 **Saha stok kontrolü** — kalite kontrol denetimi (sayım değil): sahada patlak/çatlak
+  palet ve defolu ürün taraması. 2/10 saha yapıldı (15.07.2026, 21.07.2026), 8 saha kaldı.
 
 ### OneNote sunum hazırlığı (Zeki bey'e)
 Sadece **TS EN 13888 (derz dolgu)** standardı kaldı — diğer standart grupları hazır.
