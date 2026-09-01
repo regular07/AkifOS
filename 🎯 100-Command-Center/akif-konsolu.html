@@ -950,8 +950,10 @@
 
     // Sayı animasyonu (0'dan gerçek değere) — açılışta hafif bir "canlanma" hissi verir.
     // Aynı anda oran çubukları da genişliklerine dolar (CSS transition, width burada set edilir).
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function animateCount(el, target, duration) {
       if (!el) return;
+      if (reduceMotion) { el.textContent = target; return; }
       var startTime = null;
       function step(ts) {
         if (!startTime) startTime = ts;
