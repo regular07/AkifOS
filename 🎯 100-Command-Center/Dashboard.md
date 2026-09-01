@@ -68,7 +68,7 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 ## 🖥️ Görsel Takip (otomatik güncellenir)
 - **Akif Konsolu** (kanban): https://claude.ai/code/artifact/c853ba74-33fd-465d-adf5-57877d4b3824
 - **Miro Mindmap** (tüm harita): https://miro.com/app/board/uXjVHsWdhbg=/
-- Kaynak dosya (Konsol): `/private/tmp/claude-501/-Users-orhans-Documents-AkifOS/343ef1c2-55b3-4a88-9c3c-a22800bc00d7/scratchpad/akif-konsolu.html`
+- Kaynak dosya (Konsol, kalıcı): `🎯 100-Command-Center/akif-konsolu.html`
 - Her görev/durum değişikliğinde bu ikisi de senkronize edilir.
 
 ## Nasıl kullanılır

@@ -1,0 +1,553 @@
+<title>Akif Konsolu</title>
+<style>
+  :root {
+    --bg: #10131a;
+    --surface: #1a1e28;
+    --surface-2: #212636;
+    --surface-3: #262c3f;
+    --border: #2a2f3d;
+    --border-soft: #21252f;
+    --text: #e9e7e2;
+    --text-dim: #a8afc2;
+    --text-mute: #6b7286;
+    --accent: #4dd8c0;
+    --accent-soft: rgba(77, 216, 192, 0.12);
+    --critical: #f0576b;
+    --critical-soft: rgba(240, 87, 107, 0.14);
+    --warning: #f0a93e;
+    --warning-soft: rgba(240, 169, 62, 0.14);
+    --good: #3fcf8e;
+    --good-soft: rgba(63, 207, 142, 0.14);
+    --shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  /* Tek dünya, koyu konsol — kasıtlı tek tema */
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); }
+
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono {
+    font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+
+  ::selection { background: var(--accent-soft); color: var(--accent); }
+
+  /* ============ TOP BAR ============ */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(16, 19, 26, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 1.1rem 1.5rem;
+  }
+
+  .topbar-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
+  .brand-mark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    border: 1px solid rgba(77, 216, 192, 0.35);
+    border-radius: 4px;
+    padding: 0.18rem 0.45rem;
+    text-transform: uppercase;
+  }
+
+  .brand h1 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .summary-strip {
+    display: flex;
+    gap: 1.6rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+  }
+
+  .summary-item { display: flex; align-items: center; gap: 0.45rem; color: var(--text-dim); }
+  .summary-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .summary-item strong { color: var(--text); font-variant-numeric: tabular-nums; font-weight: 600; }
+  .dot-critical { background: var(--critical); box-shadow: 0 0 8px rgba(240, 87, 107, 0.6); }
+  .dot-warning { background: var(--warning); }
+  .dot-good { background: var(--good); }
+
+  /* ============ BANNER: en kritik iş ============ */
+  .alert-banner {
+    max-width: 1180px;
+    margin: 1.25rem auto 0;
+    padding: 0 1.5rem;
+  }
+  .alert-inner {
+    background: var(--critical-soft);
+    border: 1px solid rgba(240, 87, 107, 0.35);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .alert-icon {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--critical);
+    background: rgba(240, 87, 107, 0.18);
+    border-radius: 4px;
+    padding: 0.22rem 0.5rem;
+    flex-shrink: 0;
+  }
+  .alert-text { font-size: 0.86rem; color: var(--text-dim); line-height: 1.5; }
+  .alert-text strong { color: var(--text); font-weight: 600; }
+
+  /* ============ LAYOUT ============ */
+  main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.75rem 1.5rem 4rem;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 860px) {
+    .board { grid-template-columns: 1fr; }
+    .summary-strip { display: none; }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.15rem 0.6rem;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .column-title {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .column-title .glyph {
+    font-size: 1.05rem;
+  }
+
+  .column-title h2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+
+  .column-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    letter-spacing: 0.02em;
+  }
+
+  .column-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-mute);
+    background: var(--surface-2);
+    border-radius: 20px;
+    padding: 0.15rem 0.55rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ============ LANE ============ */
+  .lane-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-mute);
+    margin: 0.3rem 0 0.15rem;
+  }
+
+  .lane-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-soft);
+  }
+
+  .lane { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.4rem; }
+
+  /* ============ CARD ============ */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 0.95rem;
+    box-shadow: var(--shadow);
+    transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+  }
+
+  .card:hover {
+    background: var(--surface-2);
+    transform: translateY(-1px);
+  }
+
+  .card.sev-critical { border-left-color: var(--critical); }
+  .card.sev-warning { border-left-color: var(--warning); }
+  .card.sev-good { border-left-color: var(--good); }
+  .card.sev-mute { border-left-color: var(--border); }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .card-title {
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .card-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.1rem;
+  }
+
+  .card-desc {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin-top: 0.3rem;
+  }
+
+  .card-tags {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.55rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.63rem;
+    letter-spacing: 0.03em;
+    padding: 0.16rem 0.45rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .tag-critical { color: var(--critical); background: var(--critical-soft); }
+  .tag-warning { color: var(--warning); background: var(--warning-soft); }
+  .tag-good { color: var(--good); background: var(--good-soft); }
+  .tag-mute { color: var(--text-mute); background: var(--surface-3); }
+
+  /* ============ FOOTER ============ */
+  footer {
+    max-width: 1180px;
+    margin: 2.5rem auto 0;
+    padding: 1.25rem 1.5rem 0;
+    border-top: 1px solid var(--border-soft);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card { transition: none; }
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">AKIFOS</span>
+      <h1>Akif Konsolu</h1>
+    </div>
+    <div class="summary-strip">
+      <span class="summary-item"><span class="summary-dot dot-critical"></span>Kritik <strong>5</strong></span>
+      <span class="summary-item"><span class="summary-dot dot-warning"></span>Bu hafta <strong>7</strong></span>
+      <span class="summary-item"><span class="summary-dot dot-good"></span>Bekleme <strong>2</strong></span>
+    </div>
+  </div>
+</header>
+
+<div class="alert-banner">
+  <div class="alert-inner">
+    <span class="alert-icon mono">EN ÖNCELİKLİ</span>
+    <div class="alert-text">
+      <strong>3 iş görevi 34+ gün gecikmiş, yıllık prim şartına bağlı</strong> — SMAT girişi, TF5 girişi, saha stok kontrolü. Hâlâ geçerli mi kontrol et.
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="board">
+
+    <!-- ============ İŞ ZAMANI ============ -->
+    <section class="column">
+      <div class="column-header">
+        <div class="column-title">
+          <span class="glyph">🏭</span>
+          <div>
+            <h2>İş Zamanı</h2>
+            <div class="column-sub">Weber / Yapı Kimyasalları · 08–17 / 15–01</div>
+          </div>
+        </div>
+        <span class="column-count mono">7</span>
+      </div>
+
+      <div class="lane-label">Proje Bazlı</div>
+      <div class="lane">
+
+        <div class="card sev-critical">
+          <div class="card-top">
+            <div class="card-title">SMAT girişi (5 adet)</div>
+            <div class="card-date">27 Tem</div>
+          </div>
+          <div class="card-desc">Henüz başlanmadı görünmüyor — yıllık prim şartı, kontrol edilmeli.</div>
+          <div class="card-tags">
+            <span class="tag tag-critical">35 GÜN GECİKMİŞ</span>
+            <span class="tag tag-mute">P1</span>
+          </div>
+        </div>
+
+        <div class="card sev-critical">
+          <div class="card-top">
+            <div class="card-title">TF5 girişi (5 adet)</div>
+            <div class="card-date">28 Tem</div>
+          </div>
+          <div class="card-desc">Yıllık prim şartı, henüz başlanmadı.</div>
+          <div class="card-tags">
+            <span class="tag tag-critical">34 GÜN GECİKMİŞ</span>
+            <span class="tag tag-mute">P1</span>
+          </div>
+        </div>
+
+        <div class="card sev-critical">
+          <div class="card-top">
+            <div class="card-title">Saha stok kontrolü</div>
+            <div class="card-date">28 Tem</div>
+          </div>
+          <div class="card-desc">9/10 kaldı, 1 tamamlandı. Yıllık prim şartı.</div>
+          <div class="card-tags">
+            <span class="tag tag-critical">34 GÜN GECİKMİŞ</span>
+            <span class="tag tag-mute">P1</span>
+          </div>
+        </div>
+
+        <div class="card sev-warning">
+          <div class="card-top">
+            <div class="card-title">OneNote sunum hazırlığı</div>
+            <div class="card-date">31 Tem</div>
+          </div>
+          <div class="card-desc">Standartlar + uygulama standartları + TSE onaylı ürünler — müdüre sunum.</div>
+          <div class="card-tags">
+            <span class="tag tag-warning">31 GÜN GECİKMİŞ</span>
+            <span class="tag tag-mute">P2</span>
+          </div>
+        </div>
+
+        <div class="card sev-mute">
+          <div class="card-top">
+            <div class="card-title">Laboratuvar denemesi</div>
+            <div class="card-date">31 Tem</div>
+          </div>
+          <div class="card-desc">Acil ama önem derecesi düşük, deneme üretimi görselleri.</div>
+          <div class="card-tags">
+            <span class="tag tag-mute">DÜŞÜK ÖNEM</span>
+            <span class="tag tag-mute">P3</span>
+          </div>
+        </div>
+
+        <div class="card sev-mute">
+          <div class="card-top">
+            <div class="card-title">OneDrive derinlemesine işleme</div>
+            <div class="card-date">—</div>
+          </div>
+          <div class="card-desc">qp02 database, qp02 hammadde, standart özetleri — sıra Akif'te.</div>
+          <div class="card-tags">
+            <span class="tag tag-mute">ACİL DEĞİL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lane-label">Rutin</div>
+      <div class="lane">
+        <div class="card sev-mute">
+          <div class="card-top">
+            <div class="card-title">Aylık rapor hazırlığı</div>
+            <div class="card-date">—</div>
+          </div>
+          <div class="card-desc">Kimin yapacağı netleşti, birkaç ay aynı kişi üstlenecek. Aciliyet yok.</div>
+          <div class="card-tags">
+            <span class="tag tag-mute">DÖNEMSEL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EV ZAMANI ============ -->
+    <section class="column">
+      <div class="column-header">
+        <div class="column-title">
+          <span class="glyph">🏠</span>
+          <div>
+            <h2>Ev Zamanı</h2>
+            <div class="column-sub">Weber dışındaki tüm saatler</div>
+          </div>
+        </div>
+        <span class="column-count mono">7</span>
+      </div>
+
+      <div class="lane-label">Rutin</div>
+      <div class="lane">
+        <div class="card sev-critical">
+          <div class="card-top">
+            <div class="card-title">Kira öde</div>
+            <div class="card-date">4 Eyl</div>
+          </div>
+          <div class="card-desc">23.000₺ — ayın 5'i gelmeden ödenmeli. Her ay tekrarlar.</div>
+          <div class="card-tags">
+            <span class="tag tag-critical">23.000₺</span>
+            <span class="tag tag-mute">P1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lane-label">Proje Bazlı</div>
+      <div class="lane">
+
+        <div class="card sev-warning">
+          <div class="card-top">
+            <div class="card-title">Gardırop — değişim talebi</div>
+            <div class="card-date">2 Eyl</div>
+          </div>
+          <div class="card-desc">8. arıza, Ayıplı Mal Yönetmeliği kapsamında. Eşinin telefonuyla hoparlörden ara, Granola ile kaydet.</div>
+          <div class="card-tags">
+            <span class="tag tag-warning">HUKUKİ SÜREÇ</span>
+            <span class="tag tag-mute">P2</span>
+          </div>
+        </div>
+
+        <div class="card sev-warning">
+          <div class="card-top">
+            <div class="card-title">Elektrik abonelik/zarar takibi</div>
+            <div class="card-date">8 Eyl</div>
+          </div>
+          <div class="card-desc">2025 Aralık + Mart talepleri yanıtsız kaldı. Ekip geldi mi, zarar talebi sonucu — sürekli takip.</div>
+          <div class="card-tags">
+            <span class="tag tag-warning">SÜREKLİ TAKİP</span>
+            <span class="tag tag-mute">P1/P2</span>
+          </div>
+        </div>
+
+        <div class="card sev-good">
+          <div class="card-top">
+            <div class="card-title">Çöp dolabı tamiri</div>
+            <div class="card-date">6 Eyl</div>
+          </div>
+          <div class="card-desc">"Evime özen göstermem lazım" — malzeme (talaş+tutkal) 2 Eylül'de alınacak.</div>
+          <div class="card-tags">
+            <span class="tag tag-good">MUTLAKA HATIRLAT</span>
+          </div>
+        </div>
+
+        <div class="card sev-good">
+          <div class="card-top">
+            <div class="card-title">Errand: Pattex · Kettle · Talaş+Tutkal</div>
+            <div class="card-date">2 Eyl</div>
+          </div>
+          <div class="card-desc">Tek çıkışta halledilebilir, düşük zihinsel yük.</div>
+          <div class="card-tags">
+            <span class="tag tag-good">TEK TUR</span>
+          </div>
+        </div>
+
+        <div class="card sev-good">
+          <div class="card-top">
+            <div class="card-title">Banka promosyonu kontrolü</div>
+            <div class="card-date">4 Eyl</div>
+          </div>
+          <div class="card-desc">105.000₺ — 3 yılda bir, 3 iş günü içinde yatması bekleniyor.</div>
+          <div class="card-tags">
+            <span class="tag tag-good">105.000₺</span>
+          </div>
+        </div>
+
+        <div class="card sev-mute">
+          <div class="card-top">
+            <div class="card-title">Deeploico — logo &amp; site</div>
+            <div class="card-date">—</div>
+          </div>
+          <div class="card-desc">Marka kesin, TürkPatent + domain bekliyor. Hiç acil değil.</div>
+          <div class="card-tags">
+            <span class="tag tag-mute">ACİL DEĞİL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <span>Kaynak: Dashboard.md · Threads.md · Todoist</span>
+  <span>Güncelleme: her önemli değişiklikte yeniden yayınlanır</span>
+</footer>
