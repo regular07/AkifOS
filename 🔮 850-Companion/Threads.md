@@ -76,6 +76,23 @@ iş oturumlarına karıştırma.
 **Klima motoru garip ses çıkarıyor (2026-08-31):** Şimdilik izlemede, tekrar ederse
 servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
 
+**🔴 ÖNEMLİ TAKİP — Elektrik abonelik/zarar süreci (2026-09-01, 1 hafta boyunca SÜREKLİ
+hatırlatılacak):**
+
+*Tarihçe:*
+- 2025 Aralık: Aboneliği ticaretten meskene çevirme talebi yapıldı — hiç dönüş olmadı
+- 06.03.2026: İkinci talep yapıldı — yine dönüş olmadı
+- 2026-09-01: Akif şirkete gitti, hem meskene çevirme işini hem de bu gecikmeden
+  kaynaklanan geriye dönük zararının karşılanmasını talep etti (zarar talep formu dolduruldu)
+
+*Şirketin sözü:* Bu hafta içinde meskene çevirme için ekip gönderecekler. Zarar talep formu
+incelenecek, sonuç mesajlardan takip edilebilir ya da şubeye tekrar uğranabilir dediler.
+
+*Neden kritik:* Akif "1 hafta boyunca takip edeceğim, 1 hafta içinde aksiyon alınmazsa
+şikayet talebinde bulunacağım" dedi — Todoist'e 3 görev eklendi (ekip geldi mi, zarar
+talebi sonucu, 8 Eylül'de aksiyon yoksa şikayet). **Bu konuyu ev bağlamı her açıldığında
+hatırlat, sadece sorulunca değil — Akif özellikle "sürekli hatırlatman lazım" dedi.**
+
 **Ev görevleri — netleşmiş plan (2026-09-01):**
 
 *1 Eylül:*
