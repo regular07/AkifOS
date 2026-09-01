@@ -43,12 +43,10 @@ sosyal medya footer. Art arda gelen mobil taşma bug'ları kök sebebine inilere
 Canlı: https://regular07.github.io/standart-paket/ — kullanıcı memnun ("eline sağlık
 sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
 
-**BEKLEMEDE (2026-08-31):** `git push`/`git remote` için Bash izin kuralı eklenemedi — Claude'un
-kendi izin dosyasını (.claude/settings.local.json) düzenlemesi "auto mode classifier" tarafından
-engelleniyor, chat onayı da yetmiyor. Akif PC başına geçince ya `/permissions` ile ya da dosyayı
-elle düzenleyerek eklemeli: `"Bash(git push *)", "Bash(git remote *)", "Bash(git fetch *)"`.
-Not: 2026-08-31 akşamı git push kendiliğinden çalıştı (classifier engellemedi), ama kalıcı
-izin hâlâ eklenmedi, tekrar bloklanabilir.
+**✅ ÇÖZÜLDÜ (2026-09-01 akşam):** `git push`/`git remote`/`git fetch` izin kuralı Akif
+tarafından `.claude/settings.local.json`'a eklendi (Claude kendi izin dosyasını
+düzenleyemediği için, Akif kendi terminalinden bir Python komutuyla ekledi). Canlı test
+edildi, artık hiç onay istemeden çalışıyor.
 
 **✅ ÇÖZÜLDÜ (2026-09-01 akşam):** compile.py gece otomasyonu sorunu tam çözüldü. İki ayrı
 sorun vardı: (1) macOS Tam Disk Erişimi eksikti — python3 sembolik bağlantısı Finder'da
