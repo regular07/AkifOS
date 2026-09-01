@@ -65,6 +65,12 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - 📋 [[🔮 850-Companion/Threads|Açık Threadler]]
 - 🔐 [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]]
 
+## 🖥️ Görsel Takip (otomatik güncellenir)
+- **Akif Konsolu** (kanban): https://claude.ai/code/artifact/c853ba74-33fd-465d-adf5-57877d4b3824
+- **Miro Mindmap** (tüm harita): https://miro.com/app/board/uXjVHsWdhbg=/
+- Kaynak dosya (Konsol): `/private/tmp/claude-501/-Users-orhans-Documents-AkifOS/343ef1c2-55b3-4a88-9c3c-a22800bc00d7/scratchpad/akif-konsolu.html`
+- Her görev/durum değişikliğinde bu ikisi de senkronize edilir.
+
 ## Nasıl kullanılır
 Bu klasörde terminal aç ve `claude` çalıştır, sonra konuş. Dündar Dinç her şeyi hatırlar,
 düzenler, üstüne koyar. Notları sen yönetmezsin: konuşursun, o organize eder.
