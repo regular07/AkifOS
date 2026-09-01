@@ -98,9 +98,10 @@ hatırlat, sadece sorulunca değil — Akif özellikle "sürekli hatırlatman la
 *1 Eylül:*
 - ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
 - ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
-- 🔲 Gardırop için değişim talebinde bulun (servis değil — detay aşağıda)
 
-*2 Eylül (ertesi gün, düşük öncelik):*
+*2 Eylül (ertesi gün):*
+- 🔲 Gardırop için değişim talebinde bulun (servis değil — detay aşağıda) — eşinin
+  telefonuyla hoparlörden ara, Granola ile kayıt altına al
 - Kettle almaya git
 - Pattex 502 al
 - Talaş tozu ve ahşap tutkalı satın al (çöp dolabı tamiri için)
@@ -124,8 +125,11 @@ geçildi):**
   da toplam arızaların 6+ kez tekrarı → tüketici doğrudan değişim/bedel iadesi talep edebilir,
   firma "tamir edelim" diyemez. Akif 8 kez ile bu şartı fazlasıyla aşmış.
 - **Karar (2026-09-01):** Akif değişim talebinde bulunacak (iade değil).
-- **Adımlar:** 8 servis kaydını (fiş/tarih/arıza açıklaması) topla → firmaya yazılı başvuru
-  (e-posta/noter ihtarnamesi) → reddederse İl/İlçe Tüketici Hakem Heyeti'ne ücretsiz başvuru.
+- **Kayıt yöntemi:** Görüşme telefonla yapılacak (eşinin telefonu, hoparlörden), **Granola
+  ile kayıt altına alınacak** — "hakkımızı aramak daha rahat olur" dedi, kanıt için önemli.
+- **2 Eylül'e ertelendi** (1 Eylül'den taşındı, Granola kaydı için planlama gerekti).
+- **Adımlar:** 8 servis kaydını (fiş/tarih/arıza açıklaması) topla → firmayı ara, Granola ile
+  kaydet → reddederse İl/İlçe Tüketici Hakem Heyeti'ne ücretsiz başvuru.
 - Todoist görevi güncellendi: "Gardırop için değişim talebinde bulun"
 
 **Akşam vardiyası günü sabah rutini:** Bu plan SADECE akşam vardiyasında çalıştığı
