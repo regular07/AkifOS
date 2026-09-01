@@ -70,10 +70,10 @@ servis aranacak. **Bu konu ev bağlamında her açıldığında hatırlat/sor.**
 
 **Ev görevleri — netleşmiş plan (2026-09-01):**
 
-*1 Eylül (öncelikli 3 iş):*
-- Elektrik faturasını öde + aboneliği ticaretten meskene çevir (~5.000₺), p2
-- Hobi odası pimapenler için Ömer Üzümcü'nün numarasını ara
-- Gardırop için servis ara
+*1 Eylül:*
+- ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
+- ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
+- 🔲 Gardırop için servis ara — hâlâ açık
 
 *2 Eylül (ertesi gün, düşük öncelik):*
 - Kettle almaya git
