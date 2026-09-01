@@ -43,7 +43,10 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 
 ## ⚙️ Sistem/Altyapı
 - 🔲 **Beklemede:** git push izin kuralı — PC başında `/permissions` ile eklenecek
-- ✅ compile.py düzeltildi, her gece 03:00 otomatik derliyor
+- 🔴 **Beklemede:** compile.py gece otomasyonu çalışmıyor — macOS "Tam Disk Erişimi" izni
+  eksik (`/Library/Developer/CommandLineTools/usr/bin/python3`'a Sistem Ayarları'ndan
+  Gizlilik ve Güvenlik → Tam Disk Erişimi'nden izin verilmesi lazım). launchd'ye geçirildi
+  (cron çalışmıyordu), ama izin olmadan o da çalışmaz.
 - ✅ Obsidian eklentisi güvenlik riski yüzünden kaldırıldı, git artık Claude'da
 
 ## Hızlı bağlantılar
