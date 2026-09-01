@@ -20,3 +20,5 @@ onlar [[Proje Bazlı İşler]] dosyasında.
 - Kimin hazırlayacağı konusunda karışıklık vardı ("birbirimiz yapıyor" sanılıyormuş)
 - Karar: birkaç ay daha aynı kişi üstlenecek, alışıldıktan sonra görev bölüşülecek
 - Son gönderim tarihi hatırlanmıyor, aciliyet yok — diğer görevler arasına sıkıştırılacak
+- **Todoist'e her ay tekrarlayan hatırlatıcı olarak eklendi** (2026-09-01, ayın son iş
+  günü) — Akif "her ay hatırlatmanı istiyorum" dedi.
