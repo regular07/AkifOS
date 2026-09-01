@@ -864,6 +864,19 @@
   <span>Güncelleme: her önemli değişiklikte yeniden yayınlanır</span>
 </footer>
 
+<div class="reminder-overlay" id="reminderOverlay">
+  <div class="reminder-modal" role="dialog" aria-label="Hatırlatma">
+    <div class="reminder-head">
+      <div class="reminder-head-title">⚠️ Hatırlatma — dikkat gerekenler</div>
+      <button class="reminder-close" id="reminderClose" aria-label="Kapat">✕</button>
+    </div>
+    <div class="reminder-body" id="reminderBody"></div>
+    <div class="reminder-foot">
+      <button id="reminderOk">Gördüm, kapat</button>
+    </div>
+  </div>
+</div>
+
 <script>
   // Tek daire, üç dilim: Tamamlanan (yeşil) + Gecikmiş (kırmızı) + Bekleyen (mavi).
   // Hepsi toplam görev sayısının bir oranı olarak çiziliyor — böylece "bekleyen"
