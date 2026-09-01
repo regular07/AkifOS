@@ -983,4 +983,64 @@
       row.addEventListener('mouseleave', function () { setHover(null); });
     });
   })();
+
+  // ============ HATIRLATMA POPUP ============
+  // Sayfa açılınca otomatik çıkar. Listeyi DOM'daki kartlardan kendisi
+  // toplar (ayrı bir veri listesi tutmuyoruz — kartlar tek doğru kaynak):
+  // kırmızı (kritik) olan HER KART + tarihi "2 Eyl" olan her kart.
+  // "Tamamlandı" bölümündeki kartlar hiç sayılmaz.
+  (function () {
+    var monthOrder = { 'Tem': 7, 'Eyl': 9 };
+    function dateSortKey(text) {
+      var m = /^(\d+)\s+(\w+)/.exec(text);
+      if (!m) return 999; // "—", "Her ay" gibi tarihsiz/dönemsel olanlar en sona
+      var day = parseInt(m[1], 10);
+      var month = monthOrder[m[2]] || 0;
+      return month * 100 + day;
+    }
+
+    var items = [];
+    document.querySelectorAll('.lane').forEach(function (lane) {
+      var label = lane.previousElementSibling;
+      var isCompleted = label && label.classList.contains('lane-label') && label.textContent.indexOf('Tamamlandı') !== -1;
+      if (isCompleted) return;
+
+      lane.querySelectorAll('.card').forEach(function (card) {
+        var isCritical = card.classList.contains('sev-critical');
+        var dateEl = card.querySelector('.card-date');
+        var dateText = dateEl ? dateEl.textContent.trim() : '';
+        var isTomorrow = dateText === '2 Eyl';
+        if (!isCritical && !isTomorrow) return;
+
+        items.push({
+          title: card.querySelector('.card-title').textContent.trim(),
+          date: dateText,
+          critical: isCritical,
+          sortKey: dateSortKey(dateText)
+        });
+      });
+    });
+
+    items.sort(function (a, b) { return a.sortKey - b.sortKey; });
+
+    var body = document.getElementById('reminderBody');
+    items.forEach(function (item) {
+      var row = document.createElement('div');
+      row.className = 'reminder-item';
+      row.innerHTML =
+        '<span class="reminder-dot" style="background:' + (item.critical ? 'var(--critical)' : 'var(--warning)') + '"></span>' +
+        '<div><div class="reminder-item-title">' + item.title + '</div>' +
+        '<div class="reminder-item-date">' + (item.date || '—') + (item.critical ? ' · GECİKMİŞ' : ' · YARIN') + '</div></div>';
+      body.appendChild(row);
+    });
+
+    var overlay = document.getElementById('reminderOverlay');
+    function closeReminder() { overlay.classList.remove('open'); }
+    document.getElementById('reminderClose').addEventListener('click', closeReminder);
+    document.getElementById('reminderOk').addEventListener('click', closeReminder);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeReminder(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeReminder(); });
+
+    if (items.length > 0) overlay.classList.add('open');
+  })();
 </script>
