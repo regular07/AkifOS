@@ -61,7 +61,8 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - Harcama yaptığında bana söyle, oraya işlerim
 
 ## ⚙️ Sistem/Altyapı
-- 🔲 **Beklemede:** git push izin kuralı — PC başında `/permissions` ile eklenecek
+- ✅ **ÇÖZÜLDÜ (2026-09-01 akşam):** git push/remote/fetch izin kuralı eklendi
+  (`.claude/settings.local.json`), artık hiç onay istemeden çalışıyor.
 - ✅ **ÇÖZÜLDÜ (2026-09-01 akşam):** compile.py gece otomasyonu artık çalışıyor —
   `cron`'a macOS Tam Disk Erişimi izni verildi + AkifOS klasörü "Her zaman bu cihazda
   tut" yapıldı (OneDrive online-only dosya sorunu da giderildi). Cron ile test edildi,
