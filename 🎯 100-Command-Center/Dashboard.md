@@ -16,9 +16,20 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - Açık soru: Basit Destek 1.000₺ — aylık mı, talep başı mı?
 - Detay: [[🔮 850-Companion/Threads|Threads]] → "Web Tasarım Freelance" thread'i
 
-## 🧪 Yapı Kimyasalları
-- OneDrive haritası çıkarıldı, derinlemesine işleme **henüz başlamadı**
-- Bekleyen: qp02 database, qp02 hammadde, standartlar
+## 🧪 Yapı Kimyasalları — İş Zamanı (SADECE Weber, 08-17/15-01)
+**Proje Bazlı:**
+- 🔴 SİP girişi (eski adı TF5) — gecikmiş, prim şartı
+- 🔴 Saha stok kontrolü — kalite denetimi (sayım değil), 2/10 yapıldı, 8 kaldı, prim şartı
+- 🟡 OneNote sunum (Zeki bey'e) — sadece TS EN 13888 kaldı
+- OneDrive derinlemesine işleme — henüz başlamadı (qp02, standartlar)
+- Derz dolgu görsel sunum projesi — ertelendi
+- Dilara hanıma fikrimi danış
+
+**Rutin:** Aylık rapor hazırla — her ay, otomatik tekrarlıyor
+
+**✅ Tamamlandı (1 Eylül):** SMAT girişi, Laboratuvar denemesi
+
+**Görsel:** [[akif-konsolu.html|Konsol]] · Miro mindmap (aşağıda link)
 
 ## 🏠 Ev İşleri (Todoist — `ev` etiketi)
 **1 Eylül (bugün):**
