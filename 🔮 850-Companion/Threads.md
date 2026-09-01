@@ -98,7 +98,7 @@ hatırlat, sadece sorulunca değil — Akif özellikle "sürekli hatırlatman la
 *1 Eylül:*
 - ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
 - ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
-- 🔲 Gardırop için servis ara — hâlâ açık
+- 🔲 Gardırop için değişim talebinde bulun (servis değil — detay aşağıda)
 
 *2 Eylül (ertesi gün, düşük öncelik):*
 - Kettle almaya git
