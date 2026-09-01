@@ -50,12 +50,13 @@ elle düzenleyerek eklemeli: `"Bash(git push *)", "Bash(git remote *)", "Bash(gi
 Not: 2026-08-31 akşamı git push kendiliğinden çalıştı (classifier engellemedi), ama kalıcı
 izin hâlâ eklenmedi, tekrar bloklanabilir.
 
-**BEKLEMEDE (2026-09-01):** compile.py gece otomasyonu (03:00) hiç çalışmadı — sebep bulundu:
-macOS "Tam Disk Erişimi" (Full Disk Access) izni eksik, python3'ün OneDrive klasörüne erişimi
-"Operation not permitted" ile reddediliyor. cron hiç ateşlenmiyordu (TCC sessizce engelliyor),
-launchd'ye geçirildi (`~/Library/LaunchAgents/com.akifos.compile.plist`) ama izin olmadan o da
-çalışmaz. Akif Sistem Ayarları → Gizlilik ve Güvenlik → Tam Disk Erişimi → "+" →
-`/Library/Developer/CommandLineTools/usr/bin/python3` ekleyip açmalı.
+**✅ ÇÖZÜLDÜ (2026-09-01 akşam):** compile.py gece otomasyonu sorunu tam çözüldü. İki ayrı
+sorun vardı: (1) macOS Tam Disk Erişimi eksikti — python3 sembolik bağlantısı Finder'da
+seçilemediği için `/usr/sbin/cron`'un kendisine izin verildi (python3 yerine, daha sağlam
+çözüm), (2) OneDrive'ın online-only dosyaları arka plan sürecine servis edememesi —
+AkifOS klasörü "Her zaman bu cihazda tut" yapılarak çözüldü. `launchd` denemesi geri
+alındı, sade `cron` ile devam ediliyor (0 3 * * *). Canlı testle doğrulandı
+(`ONEDRIVE-OK-2` — cron'dan OneDrive dosyası başarıyla okundu).
 
 **Marka ismi kesinleşti: Deeploico** (2026-08-31). 11 turluk isim arayışı sonunda karar
 verildi — detay: [[kalem-kod-marka-isim-arastirmasi]]. TODO: TürkPatent kontrolü + domain
