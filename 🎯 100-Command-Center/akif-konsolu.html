@@ -127,6 +127,58 @@
   .alert-text { font-size: 0.86rem; color: var(--text-dim); line-height: 1.5; }
   .alert-text strong { color: var(--text); font-weight: 600; }
 
+  /* ============ ÖNCELİK IZGARASI — 4 alan, ayrı ayrı ============ */
+  .priority-grid {
+    max-width: 1180px;
+    margin: 1.25rem auto 0;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 860px) {
+    .priority-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .priority-grid { grid-template-columns: 1fr; }
+  }
+
+  .priority-card {
+    border-radius: 10px;
+    padding: 0.85rem 0.95rem;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .priority-card.pc-critical { background: var(--critical-soft); border-color: rgba(240, 87, 107, 0.35); }
+  .priority-card.pc-warning { background: var(--warning-soft); border-color: rgba(240, 169, 62, 0.35); }
+  .priority-card.pc-good { background: var(--good-soft); border-color: rgba(63, 207, 142, 0.35); }
+
+  .priority-head {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pc-critical .priority-head { color: var(--critical); }
+  .pc-warning .priority-head { color: var(--warning); }
+  .pc-good .priority-head { color: var(--good); }
+
+  .priority-body {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.45;
+  }
+  .priority-body strong { color: var(--text); font-weight: 600; }
+
   /* ============ İSTATİSTİK PANELİ ============ */
   .stats-panel {
     max-width: 1180px;
