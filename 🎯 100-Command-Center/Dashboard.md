@@ -62,10 +62,10 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 
 ## ⚙️ Sistem/Altyapı
 - 🔲 **Beklemede:** git push izin kuralı — PC başında `/permissions` ile eklenecek
-- 🔴 **Beklemede:** compile.py gece otomasyonu çalışmıyor — macOS "Tam Disk Erişimi" izni
-  eksik (`/Library/Developer/CommandLineTools/usr/bin/python3`'a Sistem Ayarları'ndan
-  Gizlilik ve Güvenlik → Tam Disk Erişimi'nden izin verilmesi lazım). launchd'ye geçirildi
-  (cron çalışmıyordu), ama izin olmadan o da çalışmaz.
+- ✅ **ÇÖZÜLDÜ (2026-09-01 akşam):** compile.py gece otomasyonu artık çalışıyor —
+  `cron`'a macOS Tam Disk Erişimi izni verildi + AkifOS klasörü "Her zaman bu cihazda
+  tut" yapıldı (OneDrive online-only dosya sorunu da giderildi). Cron ile test edildi,
+  doğrulandı (`ONEDRIVE-OK-2`). Her gece 03:00'te otomatik çalışacak.
 - ✅ Obsidian eklentisi güvenlik riski yüzünden kaldırıldı, git artık Claude'da
 
 ## Hızlı bağlantılar
