@@ -22,13 +22,7 @@ işlenen kısmı buradan temizlerim — burası hep boş/hafif kalsın diye.
 
 *[İşlendi 2026-09-01: Eşimin borç durumu → 🔐 400-Vault/Bütçe Takibi.md'ye taşındı]*
 
----
-
-## [Granola] Aylık rapor hazırlığı — 1 Eylül 2026, 15:24 (iş arkadaşları, Yapı Kimyasalları)
-
-- Aylık raporu kimin hazırlayacağı konusunda karışıklık vardı ("birbirimiz yapıyor" sanılıyormuş)
-- Karar: birkaç ay daha aynı kişi üstlenecek, alışıldıktan sonra görev bölüşülecek
-- Son ne zaman gönderildiği hatırlanmıyor, aciliyet yok — diğer görevler arasına sıkıştırılacak
+*[İşlendi 2026-09-01: Aylık rapor hazırlığı → 🏰 300-Projects/Yapı Kimyasalları 101/Rutin İşler.md'ye taşındı]*
 
 ---
 
