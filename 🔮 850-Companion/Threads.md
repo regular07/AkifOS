@@ -12,6 +12,12 @@ Harita çıkarıldı (`🏰 300-Projects/Yapı Kimyasalları 101/OneDrive Kaynak
 Akif hangi standart/dosyayı seçerse onu derinlemesine okuyup özetlemek. Öncelikli: qp02
 database, qp02 hammadde (güncel versiyonları var, henüz işlenmedi), standartlar.
 
+**2026-09-01:** İş takibi ikiye ayrıldı — `Proje Bazlı İşler.md` (tek seferlik, başı-sonu
+belli işler) ve `Rutin İşler.md` (tekrarlayan/dönemsel işler), ikisi de
+`🏰 300-Projects/Yapı Kimyasalları 101/` altında. Akif not attıkça `not-defteri-isleme`
+skill'i ikisine ayrıştırıp dağıtacak. İlk örnek işlendi: "Aylık rapor hazırlığı" → Rutin
+İşler'e taşındı.
+
 ### Thread: Web Tasarım Freelance — Ekip Oluşturma
 **Status:** 🟢 Active: created 2026-08-27
 "Hiç kaçarın yok" — Akif + Dündar ekibi kuruldu. Anahtar teslim web sitesi paketi (Basic/Standart/Premium,
