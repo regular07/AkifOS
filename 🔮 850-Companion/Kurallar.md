@@ -43,6 +43,13 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   o görevi hem Threads.md'ye hem gerekiyorsa Todoist'e aç uçlu iş olarak işle, sonraki
   "ne durumdayız" özetinde mutlaka yer alsın. **neden:** Mehmet Akif Akkaya (2026-08-31)
   git push izin kurulumunu ertelerken bunu açıkça istedi.
+- **kural:** Zaman/görev planı yaparken İKİ kesin blok kullan — "İş Zamanı" (SADECE Weber/
+  Yapı Kimyasalları'na ait işler; sabahçı: 08:00-17:00, akşamcı: ~15:00-01:00) ve "Ev
+  Zamanı" (bunun dışındaki TÜM saatler — ev işleri, Deeploico/web tasarım, finans, her
+  şey). İş zamanına ev işi, ev zamanına iş görevi karıştırma. **neden:** Mehmet Akif
+  Akkaya (2026-09-01) net söyledi: "iş zaman iş, ev zaman ev olarak ayırmak istiyorum...
+  iş zamanı derken bu sadece Yapı Kimyasalları/Weber'e ait işler, geri kalan saatler ev
+  işleri" — vardiya saatine göre net blok istiyor, karışık plan zihinsel yük yaratıyor.
 
 ## Nasıl büyür
 
