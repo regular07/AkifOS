@@ -41,7 +41,15 @@ sorunum düzeldi"). Yeni skill kuruldu: `/responsive-tasma-testi`.
 kendi izin dosyasını (.claude/settings.local.json) düzenlemesi "auto mode classifier" tarafından
 engelleniyor, chat onayı da yetmiyor. Akif PC başına geçince ya `/permissions` ile ya da dosyayı
 elle düzenleyerek eklemeli: `"Bash(git push *)", "Bash(git remote *)", "Bash(git fetch *)"`.
-O zamana kadar git push'lar Akif'in kendi terminalinden (`!` öneki ile) yapılıyor.
+Not: 2026-08-31 akşamı git push kendiliğinden çalıştı (classifier engellemedi), ama kalıcı
+izin hâlâ eklenmedi, tekrar bloklanabilir.
+
+**BEKLEMEDE (2026-09-01):** compile.py gece otomasyonu (03:00) hiç çalışmadı — sebep bulundu:
+macOS "Tam Disk Erişimi" (Full Disk Access) izni eksik, python3'ün OneDrive klasörüne erişimi
+"Operation not permitted" ile reddediliyor. cron hiç ateşlenmiyordu (TCC sessizce engelliyor),
+launchd'ye geçirildi (`~/Library/LaunchAgents/com.akifos.compile.plist`) ama izin olmadan o da
+çalışmaz. Akif Sistem Ayarları → Gizlilik ve Güvenlik → Tam Disk Erişimi → "+" →
+`/Library/Developer/CommandLineTools/usr/bin/python3` ekleyip açmalı.
 
 **Marka ismi kesinleşti: Deeploico** (2026-08-31). 11 turluk isim arayışı sonunda karar
 verildi — detay: [[kalem-kod-marka-isim-arastirmasi]]. TODO: TürkPatent kontrolü + domain
