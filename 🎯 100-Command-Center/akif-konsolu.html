@@ -779,43 +779,109 @@
 
 <script>
   // Her alan (İş/Ev/Web/Sistem) için ayrı mini donut grafiği — canvas ile.
-  // Tanım: sadece vadesi GEÇMİŞ görevler arasında tamamlanan oranı.
-  // Vadesi gelmemiş görevler paydaya girmez (adil olmayan bir yargı olurdu).
+  // Tek daire, üç dilim: Tamamlanan (yeşil) + Gecikmiş (kırmızı) + Bekleyen (mavi).
+  // Hepsi toplam görev sayısının bir oranı olarak çiziliyor — böylece "bekleyen"
+  // de daireye dahil, sadece tamamlanma yüzdesi filtrelenmiyor.
   (function () {
-    document.querySelectorAll('.mini-donut').forEach(function (canvas) {
-      var completed = parseInt(canvas.dataset.completed, 10) || 0;
-      var overdue = parseInt(canvas.dataset.overdue, 10) || 0;
-      var denom = completed + overdue;
-      var pct = denom > 0 ? Math.round((completed / denom) * 100) : 100;
+    var data = [
+      { key: 'completed', label: 'Tamamlanan', value: 11, color: '#3fcf8e' },
+      { key: 'overdue',   label: 'Gecikmiş',   value: 3,  color: '#f0576b' },
+      { key: 'pending',   label: 'Bekleyen',   value: 18, color: '#5b9df2' }
+    ];
+    var total = data.reduce(function (s, d) { return s + d.value; }, 0);
 
-      var pctLabel = canvas.parentElement.querySelector('.mini-donut-pct');
-      if (pctLabel) pctLabel.textContent = pct + '%';
+    var canvas = document.getElementById('mainDonut');
+    var ctx = canvas.getContext('2d');
+    var dpr = window.devicePixelRatio || 1;
+    var size = 150;
+    canvas.width = size * dpr;
+    canvas.height = size * dpr;
+    canvas.style.width = size + 'px';
+    canvas.style.height = size + 'px';
+    ctx.scale(dpr, dpr);
 
-      var ctx = canvas.getContext('2d');
-      var dpr = window.devicePixelRatio || 1;
-      var size = 52;
-      canvas.width = size * dpr;
-      canvas.height = size * dpr;
-      canvas.style.width = size + 'px';
-      canvas.style.height = size + 'px';
-      ctx.scale(dpr, dpr);
+    var cx = size / 2, cy = size / 2, r = size / 2 - 14, lineWidth = 20;
+    var gap = 0.035; // dilimler arası küçük boşluk (radyan)
 
-      var cx = size / 2, cy = size / 2, r = size / 2 - 5, lineWidth = 6;
-      var start = -Math.PI / 2;
-      var end = start + (pct / 100) * Math.PI * 2;
+    // Her dilimin başlangıç/bitiş açılarını önceden hesapla (hover testi için de lazım)
+    var angle = -Math.PI / 2;
+    data.forEach(function (d) {
+      var sweep = (d.value / total) * Math.PI * 2;
+      d.start = angle + gap / 2;
+      d.end = angle + sweep - gap / 2;
+      angle += sweep;
+    });
 
-      ctx.beginPath();
-      ctx.arc(cx, cy, r, 0, Math.PI * 2);
-      ctx.strokeStyle = 'rgba(240, 87, 107, 0.28)';
-      ctx.lineWidth = lineWidth;
-      ctx.stroke();
+    var hoveredKey = null;
 
-      ctx.beginPath();
-      ctx.arc(cx, cy, r, start, end);
-      ctx.strokeStyle = '#3fcf8e';
-      ctx.lineWidth = lineWidth;
-      ctx.lineCap = 'round';
-      ctx.stroke();
+    function draw() {
+      ctx.clearRect(0, 0, size, size);
+      data.forEach(function (d) {
+        var active = hoveredKey === d.key;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, d.start, d.end);
+        ctx.strokeStyle = d.color;
+        ctx.globalAlpha = hoveredKey && !active ? 0.35 : 1;
+        ctx.lineWidth = active ? lineWidth + 6 : lineWidth;
+        ctx.lineCap = 'round';
+        ctx.stroke();
+      });
+      ctx.globalAlpha = 1;
+    }
+    draw();
+
+    var tooltip = document.getElementById('donutTooltip');
+    var legendRows = document.querySelectorAll('.legend-row');
+
+    function setHover(key, clientX, clientY) {
+      hoveredKey = key;
+      draw();
+      legendRows.forEach(function (row) {
+        row.classList.toggle('hovered', row.dataset.key === key);
+      });
+      if (key) {
+        var d = data.filter(function (x) { return x.key === key; })[0];
+        var pct = Math.round((d.value / total) * 100);
+        tooltip.innerHTML = '<span class="tt-num">' + d.value + '</span> ' + d.label + ' &middot; %' + pct;
+        tooltip.classList.add('visible');
+        if (clientX != null) {
+          tooltip.style.left = (clientX + 14) + 'px';
+          tooltip.style.top = (clientY + 14) + 'px';
+        }
+      } else {
+        tooltip.classList.remove('visible');
+      }
+    }
+
+    // Fare canvas üzerindeyken hangi dilimde olduğunu açı hesabıyla bul
+    canvas.addEventListener('mousemove', function (e) {
+      var rect = canvas.getBoundingClientRect();
+      var x = e.clientX - rect.left - cx;
+      var y = e.clientY - rect.top - cy;
+      var dist = Math.sqrt(x * x + y * y);
+      var innerR = r - lineWidth / 2 - 4, outerR = r + lineWidth / 2 + 4;
+      if (dist < innerR || dist > outerR) { setHover(null); return; }
+
+      var a = Math.atan2(y, x);
+      // Tüm açıları -PI/2 başlangıcına göre normalize et (0..2PI aralığına getir)
+      var norm = a - (-Math.PI / 2);
+      while (norm < 0) norm += Math.PI * 2;
+      while (norm >= Math.PI * 2) norm -= Math.PI * 2;
+
+      var found = null;
+      data.forEach(function (d) {
+        var ds = d.start - (-Math.PI / 2); while (ds < 0) ds += Math.PI * 2;
+        var de = d.end - (-Math.PI / 2); while (de < 0) de += Math.PI * 2;
+        if (norm >= ds - 0.02 && norm <= de + 0.02) found = d.key;
+      });
+      setHover(found, e.clientX, e.clientY);
+    });
+    canvas.addEventListener('mouseleave', function () { setHover(null); });
+
+    // Sağdaki yazılı lejant satırına gelince de aynı dilim vurgulansın
+    legendRows.forEach(function (row) {
+      row.addEventListener('mouseenter', function () { setHover(row.dataset.key); });
+      row.addEventListener('mouseleave', function () { setHover(null); });
     });
   })();
 </script>
