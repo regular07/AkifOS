@@ -635,22 +635,25 @@
         <div class="legend-text">
           <div class="legend-title">Tamamlanan</div>
           <div class="legend-desc">Bitirdiğin işler — iş + ev + web + sistem toplamı</div>
+          <div class="legend-bar-track"><div class="legend-bar-fill" data-fill="completed" style="background: var(--good)"></div></div>
         </div>
-        <span class="legend-count" style="color: var(--good)">11</span>
+        <span class="legend-count" id="countCompleted" style="color: var(--good)">0</span>
       </div>
       <div class="legend-row" data-key="overdue">
         <span class="legend-swatch" style="background: var(--critical)"></span>
         <div class="legend-text">
           <div class="legend-title">Gecikmiş</div>
           <div class="legend-desc">Vadesi geçti, hâlâ açık — dikkat gerektiren işler</div>
+          <div class="legend-bar-track"><div class="legend-bar-fill" data-fill="overdue" style="background: var(--critical)"></div></div>
         </div>
-        <span class="legend-count" style="color: var(--critical)">3</span>
+        <span class="legend-count" id="countOverdue" style="color: var(--critical)">0</span>
       </div>
       <div class="legend-row" data-key="pending">
         <span class="legend-swatch" style="background: var(--pending)"></span>
         <div class="legend-text">
           <div class="legend-title">Bekleyen</div>
           <div class="legend-desc">Vadesi henüz gelmedi — sırası geldiğinde bakılacak</div>
+          <div class="legend-bar-track"><div class="legend-bar-fill" data-fill="pending" style="background: var(--pending)"></div></div>
         </div>
         <span class="legend-count" style="color: var(--pending)">18</span>
       </div>
