@@ -517,67 +517,46 @@
   </div>
 </div>
 
-<div class="stats-grid">
-  <div class="stat-domain-card">
-    <div class="mini-donut-wrap">
-      <canvas class="mini-donut" data-completed="4" data-overdue="3" width="52" height="52"></canvas>
-      <div class="mini-donut-pct"></div>
-    </div>
-    <div>
-      <div class="stat-domain-head">🏭 İş</div>
-      <div class="stat-domain-nums">
-        <div class="stat-domain-num n-good"><span class="n">4</span><span class="l">Tamam</span></div>
-        <div class="stat-domain-num n-critical"><span class="n">3</span><span class="l">Gecikmiş</span></div>
-        <div class="stat-domain-num n-mute"><span class="n">3</span><span class="l">Bekleyen</span></div>
+<div class="stats-panel">
+  <div class="stats-inner">
+    <div class="donut-wrap">
+      <canvas id="mainDonut" width="150" height="150"></canvas>
+      <div class="donut-center">
+        <span class="donut-pct" id="donutTotalLabel">32</span>
+        <span class="donut-label">TOPLAM GÖREV</span>
       </div>
     </div>
-  </div>
 
-  <div class="stat-domain-card">
-    <div class="mini-donut-wrap">
-      <canvas class="mini-donut" data-completed="2" data-overdue="0" width="52" height="52"></canvas>
-      <div class="mini-donut-pct"></div>
-    </div>
-    <div>
-      <div class="stat-domain-head">🏠 Ev</div>
-      <div class="stat-domain-nums">
-        <div class="stat-domain-num n-good"><span class="n">2</span><span class="l">Tamam</span></div>
-        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
-        <div class="stat-domain-num n-mute"><span class="n">10</span><span class="l">Bekleyen</span></div>
+    <div class="legend-list" id="legendList">
+      <div class="legend-row" data-key="completed">
+        <span class="legend-swatch" style="background: var(--good)"></span>
+        <div class="legend-text">
+          <div class="legend-title">Tamamlanan</div>
+          <div class="legend-desc">Bitirdiğin işler — iş + ev + web + sistem toplamı</div>
+        </div>
+        <span class="legend-count" style="color: var(--good)">11</span>
       </div>
-    </div>
-  </div>
-
-  <div class="stat-domain-card">
-    <div class="mini-donut-wrap">
-      <canvas class="mini-donut" data-completed="2" data-overdue="0" width="52" height="52"></canvas>
-      <div class="mini-donut-pct"></div>
-    </div>
-    <div>
-      <div class="stat-domain-head">🏰 Web</div>
-      <div class="stat-domain-nums">
-        <div class="stat-domain-num n-good"><span class="n">2</span><span class="l">Tamam</span></div>
-        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
-        <div class="stat-domain-num n-mute"><span class="n">5</span><span class="l">Bekleyen</span></div>
+      <div class="legend-row" data-key="overdue">
+        <span class="legend-swatch" style="background: var(--critical)"></span>
+        <div class="legend-text">
+          <div class="legend-title">Gecikmiş</div>
+          <div class="legend-desc">Vadesi geçti, hâlâ açık — dikkat gerektiren işler</div>
+        </div>
+        <span class="legend-count" style="color: var(--critical)">3</span>
       </div>
-    </div>
-  </div>
-
-  <div class="stat-domain-card">
-    <div class="mini-donut-wrap">
-      <canvas class="mini-donut" data-completed="3" data-overdue="0" width="52" height="52"></canvas>
-      <div class="mini-donut-pct"></div>
-    </div>
-    <div>
-      <div class="stat-domain-head">⚙️ Sistem</div>
-      <div class="stat-domain-nums">
-        <div class="stat-domain-num n-good"><span class="n">3</span><span class="l">Tamam</span></div>
-        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
-        <div class="stat-domain-num n-mute"><span class="n">0</span><span class="l">Bekleyen</span></div>
+      <div class="legend-row" data-key="pending">
+        <span class="legend-swatch" style="background: var(--pending)"></span>
+        <div class="legend-text">
+          <div class="legend-title">Bekleyen</div>
+          <div class="legend-desc">Vadesi henüz gelmedi — sırası geldiğinde bakılacak</div>
+        </div>
+        <span class="legend-count" style="color: var(--pending)">18</span>
       </div>
     </div>
   </div>
 </div>
+
+<div class="donut-tooltip" id="donutTooltip"></div>
 
 <main>
   <div class="board">
