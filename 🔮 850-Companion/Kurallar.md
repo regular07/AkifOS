@@ -54,6 +54,14 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   iş zamanı derken bu sadece Yapı Kimyasalları/Weber'e ait işler, geri kalan saatler ev
   işleri" — vardiya saatine göre net blok istiyor, karışık plan zihinsel yük yaratıyor.
 
+- **kural:** Görev/durum değişikliği (Todoist, Dashboard.md, Threads.md) olduğunda **Akif
+  Konsolu** (Artifact) ve **Miro mindmap**'i de otomatik güncelle — sormadan, "ne
+  yapıyorsak yazalım ne yazıyorsak yapalım" mantığıyla. Küçük tek tük değişikliklerde her
+  seferinde değil, anlamlı bir grup değişiklik biriktiğinde (oturum sonunda ya da büyük bir
+  güncelleme sonrası) senkronize et. **neden:** Mehmet Akif Akkaya (2026-09-01) "görsel
+  olarak yapılacak işleri görmek benim için çok önemli, her şeyi görelim gözümüzden
+  kaçmasın" dedi — metin listeleri onun için yetersiz, görsel takip şart.
+
 ## Nasıl büyür
 
 Mehmet Akif Akkaya seni düzelttiğinde ("bunu böyle yapma", "şunu bir daha yapma", "böyle istemiyorum")
