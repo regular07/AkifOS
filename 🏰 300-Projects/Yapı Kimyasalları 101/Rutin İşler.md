@@ -15,4 +15,8 @@ onlar [[Proje Bazlı İşler]] dosyasında.
 
 ## Devam Eden Rutinler
 
-*(Akif not attıkça buraya işlenecek)*
+### Aylık Rapor Hazırlığı
+*(2026-09-01, iş arkadaşlarıyla konuşma — Granola)*
+- Kimin hazırlayacağı konusunda karışıklık vardı ("birbirimiz yapıyor" sanılıyormuş)
+- Karar: birkaç ay daha aynı kişi üstlenecek, alışıldıktan sonra görev bölüşülecek
+- Son gönderim tarihi hatırlanmıyor, aciliyet yok — diğer görevler arasına sıkıştırılacak
