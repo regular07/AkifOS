@@ -947,6 +947,33 @@
     }
     draw();
 
+    // Sayı animasyonu (0'dan gerçek değere) — açılışta hafif bir "canlanma" hissi verir.
+    // Aynı anda oran çubukları da genişliklerine dolar (CSS transition, width burada set edilir).
+    function animateCount(el, target, duration) {
+      if (!el) return;
+      var startTime = null;
+      function step(ts) {
+        if (!startTime) startTime = ts;
+        var progress = Math.min((ts - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        el.textContent = Math.round(eased * target);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    animateCount(document.getElementById('donutTotalLabel'), total, 700);
+    animateCount(document.getElementById('countCompleted'), data[0].value, 700);
+    animateCount(document.getElementById('countOverdue'), data[1].value, 700);
+    animateCount(document.getElementById('countPending'), data[2].value, 700);
+
+    requestAnimationFrame(function () {
+      document.querySelectorAll('.legend-bar-fill').forEach(function (bar) {
+        var key = bar.dataset.fill;
+        var d = data.filter(function (x) { return x.key === key; })[0];
+        bar.style.width = Math.round((d.value / total) * 100) + '%';
+      });
+    });
+
     var tooltip = document.getElementById('donutTooltip');
     var legendRows = document.querySelectorAll('.legend-row');
 
