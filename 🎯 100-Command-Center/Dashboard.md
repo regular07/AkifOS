@@ -21,10 +21,10 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - Bekleyen: qp02 database, qp02 hammadde, standartlar
 
 ## 🏠 Ev İşleri (Todoist — `ev` etiketi)
-**1 Eylül (bugün, öncelikli 3 iş):**
-- 🔴 Elektrik faturasını öde + aboneliği ticaretten meskene çevir (~5.000₺)
-- 🔲 Hobi odası pimapenler için Ömer Üzümcü'nün numarasını ara
-- 🔲 Gardırop için servis ara
+**1 Eylül (bugün):**
+- ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
+- ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
+- 🔲 Gardırop için servis ara — kaldı
 
 **2 Eylül (ertesi gün):**
 - 🔲 Kettle al · 🔲 Pattex 502 al · 🔲 Talaş tozu + ahşap tutkalı al
