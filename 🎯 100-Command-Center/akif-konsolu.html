@@ -557,34 +557,65 @@
   </div>
 </div>
 
-<div class="stats-panel">
-  <div class="stats-inner">
-    <div class="donut-wrap">
-      <canvas id="successDonut" width="88" height="88"></canvas>
-      <div class="donut-center">
-        <span class="donut-pct" id="donutPctLabel">—</span>
-        <span class="donut-label">BAŞARI</span>
+<div class="stats-grid">
+  <div class="stat-domain-card">
+    <div class="mini-donut-wrap">
+      <canvas class="mini-donut" data-completed="4" data-overdue="3" width="52" height="52"></canvas>
+      <div class="mini-donut-pct"></div>
+    </div>
+    <div>
+      <div class="stat-domain-head">🏭 İş</div>
+      <div class="stat-domain-nums">
+        <div class="stat-domain-num n-good"><span class="n">4</span><span class="l">Tamam</span></div>
+        <div class="stat-domain-num n-critical"><span class="n">3</span><span class="l">Gecikmiş</span></div>
+        <div class="stat-domain-num n-mute"><span class="n">3</span><span class="l">Bekleyen</span></div>
       </div>
     </div>
+  </div>
 
-    <div class="stats-divider"></div>
-
-    <div class="stats-tiles">
-      <div class="stat-tile t-good">
-        <div class="stat-tile-value">4</div>
-        <div class="stat-tile-label">Tamamlanan</div>
-      </div>
-      <div class="stat-tile t-critical">
-        <div class="stat-tile-value">3</div>
-        <div class="stat-tile-label">Gecikmiş</div>
-      </div>
-      <div class="stat-tile t-mute">
-        <div class="stat-tile-value">12</div>
-        <div class="stat-tile-label">Vadesi Gelmedi</div>
+  <div class="stat-domain-card">
+    <div class="mini-donut-wrap">
+      <canvas class="mini-donut" data-completed="2" data-overdue="0" width="52" height="52"></canvas>
+      <div class="mini-donut-pct"></div>
+    </div>
+    <div>
+      <div class="stat-domain-head">🏠 Ev</div>
+      <div class="stat-domain-nums">
+        <div class="stat-domain-num n-good"><span class="n">2</span><span class="l">Tamam</span></div>
+        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
+        <div class="stat-domain-num n-mute"><span class="n">10</span><span class="l">Bekleyen</span></div>
       </div>
     </div>
+  </div>
 
-    <div class="stats-note">Başarı oranı, sadece vadesi <em>geçmiş</em> görevler arasında hesaplanır — henüz vadesi gelmemiş görev başarısızlık sayılmaz.</div>
+  <div class="stat-domain-card">
+    <div class="mini-donut-wrap">
+      <canvas class="mini-donut" data-completed="2" data-overdue="0" width="52" height="52"></canvas>
+      <div class="mini-donut-pct"></div>
+    </div>
+    <div>
+      <div class="stat-domain-head">🏰 Web</div>
+      <div class="stat-domain-nums">
+        <div class="stat-domain-num n-good"><span class="n">2</span><span class="l">Tamam</span></div>
+        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
+        <div class="stat-domain-num n-mute"><span class="n">5</span><span class="l">Bekleyen</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-domain-card">
+    <div class="mini-donut-wrap">
+      <canvas class="mini-donut" data-completed="3" data-overdue="0" width="52" height="52"></canvas>
+      <div class="mini-donut-pct"></div>
+    </div>
+    <div>
+      <div class="stat-domain-head">⚙️ Sistem</div>
+      <div class="stat-domain-nums">
+        <div class="stat-domain-num n-good"><span class="n">3</span><span class="l">Tamam</span></div>
+        <div class="stat-domain-num n-critical"><span class="n">0</span><span class="l">Gecikmiş</span></div>
+        <div class="stat-domain-num n-mute"><span class="n">0</span><span class="l">Bekleyen</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
