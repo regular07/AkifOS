@@ -24,9 +24,10 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 **1 Eylül (bugün):**
 - ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
 - ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
-- 🔲 Gardırop için **değişim talebinde bulun** (8. arıza, hukuki dayanak var — detay Threads.md)
 
 **2 Eylül (ertesi gün):**
+- 🔲 Gardırop için **değişim talebinde bulun** — eşinin telefonuyla hoparlörden ara,
+  Granola ile kayıt altına al (hak takibi için, detay Threads.md)
 - 🔲 Kettle al · 🔲 Pattex 502 al · 🔲 Talaş tozu + ahşap tutkalı al
 
 **4 Eylül'e kadar:**
