@@ -17,19 +17,16 @@ günlük işler burada değil — onlar [[Rutin İşler]] dosyasında.
 
 ### Yıllık prim şartı görevleri (2026-09-01 güncellendi)
 - 🔲 **SİP girişi** (5 adet) — eski adı "TF5 girişi"ydi, düzeltildi. Henüz başlanmadı.
+  **İçerdiği fikir (Dilara hanımla danışılacak):** Numune alma platformunun altına ve
+  silobus/silo basım alanlarına 3 kamyon yanaşacak şekilde duba ile ayırma önerisi.
+  Amaç: kamyon yanaşma düzenini oturtmak ve iş kazası riskini azaltmak.
 - 🔲 **Saha stok kontrolü** — kalite kontrol denetimi (sayım değil): sahada patlak/çatlak
   palet ve defolu ürün taraması. 2/10 saha yapıldı (15.07.2026, 21.07.2026), 8 saha kaldı.
 
 ### OneNote sunum hazırlığı (Zeki bey'e)
 Sadece **TS EN 13888 (derz dolgu)** standardı kaldı — diğer standart grupları hazır.
-
-### Derz dolgu görsel sunum projesi — ERTELENDİ (2026-09-01)
-TS EN 13888 ve bağlı standartların özetini komple görsel olarak sunma fikri. Rutin işler
-yoğun olduğu için şimdilik bekletiliyor — diğer hazır standartları sunmak yeterli olabilir
-diye düşünüyor (henüz kesin karar değil).
-
-### Dilara hanıma danışılacak fikir (2026-09-01)
-Yeni bir fikir var, Dilara hanımla konuşulacak. Detay henüz not edilmedi.
+**Derz dolgu görsel sunum projesi buraya dahil edildi** (2026-09-01): TS EN 13888 ve
+bağlı standartların özetini komple görsel olarak bu sunumun içinde hazırlanacak.
 
 ## Tamamlanmış Projeler
 
