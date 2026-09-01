@@ -22,3 +22,7 @@ onlar [[Proje Bazlı İşler]] dosyasında.
 - Son gönderim tarihi hatırlanmıyor, aciliyet yok — diğer görevler arasına sıkıştırılacak
 - **Todoist'e her ay tekrarlayan hatırlatıcı olarak eklendi** (2026-09-01, ayın son iş
   günü) — Akif "her ay hatırlatmanı istiyorum" dedi.
+- **Güncelleme (2026-09-01 akşam):** Son hazırlanan Haziran'dı, Temmuz+Ağustos birikmiş —
+  bu ikisini çıkarma işi ayrı, acil bir görev olarak [[Proje Bazlı İşler]]'e değil, Todoist'e
+  "Temmuz + Ağustos aylık raporlarını çıkar (birikmiş)" adıyla 2 Eylül'e eklendi. Nasıl
+  yapıldığı işyerindeki (fiziksel) not defterinde kayıtlı.
