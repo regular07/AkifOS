@@ -478,6 +478,93 @@
   @media (prefers-reduced-motion: reduce) {
     .card { transition: none; }
   }
+
+  /* ============ HATIRLATMA POPUP ============ */
+  .reminder-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 10, 14, 0.72);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+  }
+  .reminder-overlay.open { opacity: 1; pointer-events: auto; }
+
+  .reminder-modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    width: 100%;
+    max-width: 420px;
+    max-height: 82vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    transform: translateY(8px);
+    transition: transform 0.18s ease;
+  }
+  .reminder-overlay.open .reminder-modal { transform: translateY(0); }
+
+  .reminder-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1.2rem 0.9rem;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .reminder-head-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .reminder-close {
+    width: 26px; height: 26px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-mute);
+    font-size: 0.95rem;
+  }
+  .reminder-close:hover { background: var(--surface-2); color: var(--text); }
+
+  .reminder-body { padding: 0.5rem 0.6rem 0.9rem; }
+
+  .reminder-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 0.65rem 0.6rem;
+    border-radius: 8px;
+  }
+  .reminder-item:hover { background: var(--surface-2); }
+  .reminder-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 0.35rem; flex-shrink: 0; }
+  .reminder-item-title { font-size: 0.85rem; color: var(--text); font-weight: 500; line-height: 1.4; }
+  .reminder-item-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    color: var(--text-mute);
+    margin-top: 0.15rem;
+  }
+
+  .reminder-foot {
+    padding: 0.7rem 1.2rem 1.1rem;
+  }
+  .reminder-foot button {
+    width: 100%;
+    background: var(--accent);
+    color: #0a1512;
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 0.65rem;
+    border-radius: 8px;
+  }
+  .reminder-foot button:hover { filter: brightness(1.08); }
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
