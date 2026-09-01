@@ -115,6 +115,19 @@ hatırlat, sadece sorulunca değil — Akif özellikle "sürekli hatırlatman la
 *İzlemede:*
 - Klima garip ses (tekrarlarsa servis)
 
+**🪑 Gardırop — değişim talebi süreci (2026-08-03/04'te ilk konuşuldu, 2026-09-01'de aksiyona
+geçildi):**
+- 8. kez servis çağrılmış, tekrarlayan arıza. Ürün 07.01.2026'da alındı, garanti kapsamında.
+- Fatura annesinin üzerine, anne ile Akif konuşmuyor — bu **para iadesi** için hukuki engel
+  ama **değişim** için değil (fiziksel teslim-tesellüm Akif üzerinden yürüyebilir).
+- **Hukuki dayanak (Ayıplı Mal Yönetmeliği):** garanti süresi içinde aynı arızanın 4+ kez ya
+  da toplam arızaların 6+ kez tekrarı → tüketici doğrudan değişim/bedel iadesi talep edebilir,
+  firma "tamir edelim" diyemez. Akif 8 kez ile bu şartı fazlasıyla aşmış.
+- **Karar (2026-09-01):** Akif değişim talebinde bulunacak (iade değil).
+- **Adımlar:** 8 servis kaydını (fiş/tarih/arıza açıklaması) topla → firmaya yazılı başvuru
+  (e-posta/noter ihtarnamesi) → reddederse İl/İlçe Tüketici Hakem Heyeti'ne ücretsiz başvuru.
+- Todoist görevi güncellendi: "Gardırop için değişim talebinde bulun"
+
 **Akşam vardiyası günü sabah rutini:** Bu plan SADECE akşam vardiyasında çalıştığı
 günler için — genel "sabahçı" durumu değil. 2026-08-31 örneği: 10:00 uyandı → 11:30
 kahvaltı (koşuşturmalı) → 14:30 servise biniş. Önerilen düzen: 09:00 uyan → 09:15-09:45
