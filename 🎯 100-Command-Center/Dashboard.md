@@ -9,9 +9,14 @@ type: dashboard
 Bu dosyayı ben (Dündar Dinç) her önemli değişiklikte güncelliyorum. "Ne durumdayız"
 dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynaktan besleniyor.
 
-> **Çalışma modu (2 Eylül):** Akif iş yükünden bunalmış. Veri aktarma / geçmiş-import
+> **Çalışma modu (2-3 Eylül):** Akif iş yükünden bunalmış. Veri aktarma / geçmiş-import
 > işine **ara verildi** (onu yoruyor). Odak: Yapı Kimyasalları numune takibi. Kalan işler
 > mobilden takip edilecek. Yeni açık iş yaratma, tek konuya indir.
+
+> 📋 **Tüm açık işlerin tam listesi:** [[Görev Kütüğü]] — "ne yaptık / ne kaldı / ne düştü"
+> sorusunun tek cevabı. Bu Dashboard kısa vitrin; **Görev Kütüğü** tam envanter.
+> Görsel takip: **Akif Konsolu** (kanban, aşağıda link). Akif "ne yaptık" dediğinde
+> Konsol önce güncellenir, sonra link verilir.
 
 ## 🏰 Web Tasarım Freelance — Deeploico
 - Marka ismi kesin: **Deeploico** — TürkPatent kontrolü + domain kaydı Akif'te bekliyor
