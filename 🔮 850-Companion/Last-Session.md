@@ -1,69 +1,59 @@
-# Son Oturum — 2026-09-01: Deeploico, Sistem Otomasyonu, Görsel Konsol Sistemi
+# Son Oturum — 2026-09-02: Yazılım Döngüsü Planı, İş Devri, Web Tasarım Araştırması
 
-**Bu oturum ÇOK yoğundu.** Context dolmadan önce özetliyorum — yeni oturum burayı okuyup
-kaldığımız yerden devam edecek. Detaylar Threads.md ve Dashboard.md'de.
+Bir önceki oturum (2026-09-01 mega özet) `Journal.md` benzeri detayıyla Threads.md'de.
+Bu oturum yerel Mac'te (Claude Code CLI) yapıldı — bulut oturumundan (session_01NNUkj...)
+devralındı.
 
-## En Önemli Sonuçlar
+## Bağlam: iki oturum karışıklığı çözüldü
+Akif önce claude.ai/code **bulut** oturumunda çalışıyordu (uzak konteyner, sadece git
+klonu, OneDrive/tarayıcı/cron göremiyor). Bu oturum **yerel** Claude Code — araçlar
+gerçek Mac diskinde çalışıyor. Bulut oturumundaki git push 403 sorunu Akif GitHub App
+bağlantısını düzeltince çözüldü.
 
-### 1. Deeploico markası + standart-paket sitesi
-- Marka ismi kesinleşti: **Deeploico** (11 tur eleme, WebSearch ile trademark kontrolü)
-- `standart-paket` sitesi taşmasız/sağlam hale getirildi, canlı:
-  https://regular07.github.io/standart-paket/
-- TürkPatent kontrolü + domain kaydı hâlâ Akif'te bekliyor
+## Yapılanlar
 
-### 2. Sistem otomasyonu — İKİ kritik sorun tamamen çözüldü
-- **compile.py gece otomasyonu** artık çalışıyor: `cron`'a macOS Tam Disk Erişimi izni
-  verildi (python3 sembolik bağlantısı yerine `/usr/sbin/cron`'un kendisine — Finder'da
-  sembolikler seçilemiyordu) + AkifOS klasörü "Her zaman bu cihazda tut" yapıldı (OneDrive
-  online-only dosya sorunu). Canlı testle doğrulandı.
-- **git push izni** — Akif kendi terminalinden bir Python komutuyla
-  `.claude/settings.local.json`'a ekledi, artık hiç onay istemiyor.
-- Obsidian eklentisi (git-obsi-sync) güvenlik riski (token sızıntısı) yüzünden kaldırıldı,
-  git artık tamamen Claude tarafından yönetiliyor.
+### 1. model-secimi skill güncellemesi main'e alındı
+Bulut oturumunun `claude/ne-durumdayiz-kllg05` branch'indeki `ae2e100` commit'i
+(`fable-orchestration`'dan 2 kural: sessiz model mirası engeli + "devretme bedava değil")
+`main`'e merge + push edildi. Artık canlı kural.
 
-### 3. Görsel takip sistemi kuruldu — Akif için KRİTİK önem taşıyor
-- **Akif Konsolu** (Artifact, kanban): https://claude.ai/code/artifact/c853ba74-33fd-465d-adf5-57877d4b3824
-  - Kaynak dosya: `🎯 100-Command-Center/akif-konsolu.html` (vault'ta kalıcı)
-  - İş Zamanı / Ev Zamanı sütunları, Proje Bazlı/Rutin lane'leri, tarih sırasına dizili
-  - 4 ayrı öncelik kartı (İş/Ev/Web/Sistem)
-  - Tek daire istatistik: Tamamlanan/Gecikmiş/Bekleyen, hover+tooltip, sayı animasyonu, oran çubukları
-  - **Açılışta otomatik hatırlatma popup'ı** — kritik + yarınki görevleri gösterir
-- **Miro Mindmap**: https://miro.com/app/board/uXjVHsWdhbg=/ — tüm harita görsel
-- **KURAL: Her görev/durum değişikliğinde ikisi de otomatik senkronize edilir** — sormadan.
+### 2. Yazılım Döngüsü mimari planı — Fable yaptı
+`🏰 300-Projects/Yazılım Döngüsü/Plan.md`. Akif'in isteği: "yapay zekadan oluşan yazılım
+döngüsü" ile bir internet sitesi kurup yönetmek. Roller: **patron = Akif** (2 onay kapısı),
+**mimar = Fable** (ana konuşma döngüsü, asla subagent değil), **kod = Sonnet** (şablon) /
+**Opus** (zor), **test lane** (Sonnet) + **bağımsız test-gate lane** (`/code-review` + Opus,
+en yüksek efor), **görsel** (Faz 0: Artifact/design + placeholder).
+- **Faz 0** (şimdi, Codex/Higgsfield yok): `yazilim-dongusu` skill'i + Döngü-Log +
+  Deeploico iskeleti. Pilot: **Deeploico portfolyo sitesi**.
+- **Faz 1**: Higgsfield alınınca görsel lane.
+- **Faz 2**: Codex alınınca `codex-fleet` + `gptpro-handoff`.
+- **Faz 0 HENÜZ BAŞLAMADI** — Akif bunaldığı için bilinçli park. Plan dosyada bekliyor.
+- Referans: avenoxskills klonu `/tmp/avenoxskills` (Codex CLI + OpenAI aboneliği YOK,
+  Higgsfield YOK — ikisi de "para gelince/yakında" slotları).
 
-### 4. İş/Ev Zamanı ayrımı (Akif'in kendi isteği, kalıcı kural)
-- **İş Zamanı** = SADECE Weber/Yapı Kimyasalları (sabahçı 08-17, akşamcı ~15-01)
-- **Ev Zamanı** = geri kalan her şey (ev işleri + Deeploico + finans)
-- İkisi de kendi içinde **Proje Bazlı / Rutin** olarak ayrılıyor
-- Yapı Kimyasalları için ayrı dosyalar: `🏰 300-Projects/Yapı Kimyasalları 101/Proje Bazlı İşler.md` ve `Rutin İşler.md`
+### 3. İş durumu güncellendi (Akif bunalmış)
+Akif: "kafam çok dağınık, normal işlerimi yapamıyorum, çok iş var, görünce yoruluyorum".
+- **2 Eylül işlerinin hiçbiri yapılmadı** → 3 Eylül'e devredildi (gardırop değişim talebi
+  + Granola kaydı, kettle, Pattex 502, talaş tozu + ahşap tutkalı).
+- **105.000₺ banka promosyonu yattı** → `🔐 400-Vault/Bütçe Takibi.md` Gelir/Alınan'a işlendi.
+- **Aktif odak: Yapı Kimyasalları numune takibi** (rutin). Aylık rapor (Temmuz+Ağustos
+  birikmiş) geç kalındı ama numune takibinden sonraya park.
+- **Veri aktarma / geçmiş-import işine ara verildi** — Akif'i yoruyor. Mobilden takip edecek.
+- Dashboard'a "Çalışma modu" notu eklendi: yeni açık iş yaratma, tek konuya indir.
 
-### 5. Kritik bulgu: unutulmuş, prim şartlı iş görevleri
-Todoist'te 1 aydan fazla gecikmiş 3 görev bulundu (SİP girişi, Saha stok kontrolü,
-OneNote sunum) — yıllık prim şartına bağlı. SMAT girişi ve Laboratuvar denemesi bugün
-tamamlandı. SİP girişine Dilara hanımla danışılacak bir iş güvenliği fikri eklendi
-(kamyon yanaşma + duba ile alan ayırma). OneNote'a Derz dolgu görsel sunum projesi
-dahil edildi. Temmuz+Ağustos aylık raporları ayrı acil görev olarak eklendi.
+### 4. Web tasarım araştırması — Fable başlattı (arka planda)
+`🏰 300-Projects/Deeploico/Tasarım Araştırması.md`. Akif "10.000 dolarlık internet sitesi"
+kalitesinde fikirler istedi — internet araştırması + GitHub repo incelemesi + 3 somut
+tasarım yönü + stack önerisi. Bu, Yazılım Döngüsü Faz 0'ın pilotu.
 
-### 6. Para yönetimi — Bütçe Takibi.md genişletildi
-Eşinin toplam borcu ~459.000₺ (Granola'dan işlendi), aylık ~20.000₺ açık. Beklenen banka
-promosyonu 105.000₺ (4 Eylül kontrol). Akif'in kendi borçları henüz yazılmadı.
-
-### 7. Yeni sistem/skill'ler kuruldu
-- `not-defteri-isleme` skill — `📥 000-Inbox/Dump/Not Defteri.md`'ye atılan ham notları
-  (Granola kayıtları, konuşma özetleri) ayrıştırıp doğru yerlere dağıtıyor
-- `model-secimi` skill — hangi işte hangi Claude modeli kullanılacağına Akif yerine karar veriyor
-- `responsive-tasma-testi` skill — web sitesi taşma sorunlarını ölçerek teşhis ediyor
-
-## Açık Sorunlar / Devam Eden
-
-- Deeploico: logo/görsel kimlik hiç başlanmadı, portfolyo sitesi (regular07.github.io) inşa edilecek
-- Elektrik abonelik/zarar süreci — 8 Eylül'e kadar sürekli takip (Threads.md'de detay)
-- Gardırop değişim talebi — 2 Eylül, Granola ile kayıt alınacak
-- Yapı Kimyasalları OneDrive derinlemesine işleme — hâlâ başlanmadı (qp02, standartlar)
-- Akif'in kendi borçları henüz Bütçe Takibi.md'ye yazılmadı
+## Bekleyen / Sıradaki
+- **Akif `/model fable` yazacak** — web sitesi tasarımına Fable ile devam (model-secimi kuralı).
+- Fable tasarım araştırması bitince Akif bir yön seçecek → Faz 0'ın ilk somut hamlesi.
+- Bilgisayar uyku modu: Akif `sudo pmset -c sleep 0 disksleep 0 displaysleep 0 powernap 0`
+  komutunu kendi çalıştıracak (sudo, Claude yapamaz) — henüz yapılmadı.
+- 2 Eylül'den devreden ev işleri + kira (4 Eylül) + elektrik takibi (8 Eylül) duruyor.
 
 ## Ton
-Akif bugün çok üretken ve yoğun bir oturum geçirdi — hem iş hem ev hem sistem sorunlarını
-aynı anda çözdük. Görsel/somut çıktı (Konsol, Miro) onun için gerçekten motive edici oldu.
-DEHB'si nedeniyle "her şeyi görmek" ihtiyacı güçlü — bu yüzden görsel sistemler öncelikli
-tutulmalı, metin listeleri tek başına yetmiyor.
+Akif bunalmış — DEHB, çok açık iş, hepsini görünce yoruluyor. Ona listeyi daraltarak,
+tek iş vererek, takip yükünü üstlenerek yardım et. Yeni açık iş yaratma. Yazılım döngüsü
+ve tasarım işleri heyecan verici ama Akif kafası toparlanınca dönecek — zorlama.

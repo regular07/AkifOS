@@ -13,8 +13,17 @@ paralel AI ajan filosu ve model-routing politikaları) ve `hermes-agent`/`clawdb
 (sürekli çalışan otonom operatör kalıpları). Akif'te OpenAI Codex CLI olmadığı için
 `codex-fleet` şimdilik kurulamıyor. `fable-orchestration`'ın delegasyon politikası
 (pahalı model sub-agent'a sessizce miras kalmasın, devretmenin de maliyeti var)
-mevcut `model-secimi` skill'ine işlendi. Klon `/home/user/avenoxai/avenoxskills`'te
-duruyor, geri dönülürse `omp-fleet` ve gptpro/gptpro-handoff henüz incelenmedi.
+mevcut `model-secimi` skill'ine işlendi.
+
+**2026-09-02 (devam):** `model-secimi` güncellemesi (`ae2e100`) yerel `main`'e merge edildi
+ve push edildi — artık canlı kural. avenoxskills tümü incelendi (fable-orchestration,
+codex-fleet, gptpro, gptpro-handoff, omp-fleet); klon yerelde `/tmp/avenoxskills`.
+Fable ile tam mimari plan çıkarıldı → `🏰 300-Projects/Yazılım Döngüsü/Plan.md`:
+roller (patron=Akif, mimar=Fable ana döngü, kod=Sonnet/Opus subagent, test lane +
+bağımsız test-gate lane, görsel), uçtan uca döngü akışı, **Faz 0** (şimdi, Codex/Higgsfield
+yok — sadece Claude Code araçları, pilot: Deeploico portfolyo sitesi), **Faz 1** (Higgsfield
+görsel lane), **Faz 2** (Codex fleet + gptpro-handoff). Faz 0 henüz başlamadı — Akif iş
+yükünden bunaldığı için bilinçli park edildi, plan dosyada bekliyor.
 
 ### Thread: İş bilgi tabanı derinleştirme (OneDrive)
 **Status:** 🟢 Active: created 2026-08-27
@@ -27,6 +36,12 @@ belli işler) ve `Rutin İşler.md` (tekrarlayan/dönemsel işler), ikisi de
 `🏰 300-Projects/Yapı Kimyasalları 101/` altında. Akif not attıkça `not-defteri-isleme`
 skill'i ikisine ayrıştırıp dağıtacak. İlk örnek işlendi: "Aylık rapor hazırlığı" → Rutin
 İşler'e taşındı.
+
+**2026-09-02:** OneDrive'a **veri aktarma / geçmiş-import işine ara verildi** — Akif "bu
+beni yoruyor" dedi, iş yükünden bunalmış. Bu thread'in derinleştirme kısmı (qp02,
+standartlar okuması) beklemede. Akif'in şu anki aktif odağı: **numune takibi** (rutin).
+Aylık rapor (Temmuz+Ağustos birikmiş) gönderimde geç kalındı, numune takibinden sonraya
+park. Kalan işleri mobilden takip edecek.
 
 ### Thread: Web Tasarım Freelance — Ekip Oluşturma
 **Status:** 🟢 Active: created 2026-08-27
@@ -72,6 +87,13 @@ kaydı (kullanıcı yapacak), sonra logo/görsel kimlik tasarımına geçilecek.
 
 **AÇIK SORU (Akif düşünecek, arada sor):** Basit Destek 500₺ → 1.000₺ oldu, aylık mı talep başı mı?
 
+**2026-09-02:** Akif web sitesi tasarımına odaklanmak istedi ("10.000 dolarlık site"
+kalitesinde fikirler, internet araştırması + GitHub repo incelemesi). Fable ile tasarım
+araştırması başlatıldı → `🏰 300-Projects/Deeploico/Tasarım Araştırması.md` (3 tasarım
+yönü + canlı örnek siteler + açık kaynak template repoları + stack önerisi). Bu, Yazılım
+Döngüsü Faz 0'ın pilot projesi (Deeploico portfolyo sitesi) ve Website TODO #2-3 ile
+örtüşüyor. Akif döndüğünde bir yön seçecek.
+
 **Web Sitesi TODO Listesi (Deeploico portfolyo, regular07.github.io):**
 1. 🔲 Deeploico markasını TürkPatent'te kontrol et + domain kaydı yap (Akif yapacak)
 2. 🔲 Logo / görsel kimlik tasarımı — sıradaki oturum konusu, henüz başlanmadı
@@ -114,7 +136,7 @@ hatırlat, sadece sorulunca değil — Akif özellikle "sürekli hatırlatman la
 - ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
 - ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
 
-*2 Eylül (ertesi gün):*
+*2 Eylül → 3 Eylül'e devredildi (2 Eylül'de hiçbiri yapılamadı, iş yoğunluğu):*
 - 🔲 Gardırop için değişim talebinde bulun (servis değil — detay aşağıda) — eşinin
   telefonuyla hoparlörden ara, Granola ile kayıt altına al
 - Kettle almaya git
