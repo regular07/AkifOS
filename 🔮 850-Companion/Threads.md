@@ -6,6 +6,16 @@ Ongoing storylines that span multiple sessions.
 ### Thread: Setting up the second brain
 **Status:** 🟢 Active: created 2026-08-26
 
+**2026-09-02:** Akif "yapay zekadan oluşan yazılım döngüsü" kurmak istedi, `avenoxai`
+GitHub org'undaki (bir YouTube videosundan hatırladığı) 24 repo tek tek incelendi.
+En alakalı ikisi: `avenoxskills` (codex-fleet, omp-fleet, fable-orchestration —
+paralel AI ajan filosu ve model-routing politikaları) ve `hermes-agent`/`clawdbot`
+(sürekli çalışan otonom operatör kalıpları). Akif'te OpenAI Codex CLI olmadığı için
+`codex-fleet` şimdilik kurulamıyor. `fable-orchestration`'ın delegasyon politikası
+(pahalı model sub-agent'a sessizce miras kalmasın, devretmenin de maliyeti var)
+mevcut `model-secimi` skill'ine işlendi. Klon `/home/user/avenoxai/avenoxskills`'te
+duruyor, geri dönülürse `omp-fleet` ve gptpro/gptpro-handoff henüz incelenmedi.
+
 ### Thread: İş bilgi tabanı derinleştirme (OneDrive)
 **Status:** 🟢 Active: created 2026-08-27
 Harita çıkarıldı (`🏰 300-Projects/Yapı Kimyasalları 101/OneDrive Kaynak Haritası.md`). Sırada:
