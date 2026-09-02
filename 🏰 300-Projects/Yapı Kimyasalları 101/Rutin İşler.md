@@ -1,7 +1,7 @@
 ---
 title: Yapı Kimyasalları — Rutin İşler
 created: 2026-09-01
-modified: 2026-09-01
+modified: 2026-09-02
 type: note
 status: active
 tags: [yapi-kimyasallari, rutin]
@@ -14,6 +14,12 @@ kayıtları, düzenli SAP/QDMSNET girişleri vb. Tek seferlik proje işleri bura
 onlar [[Proje Bazlı İşler]] dosyasında.
 
 ## Devam Eden Rutinler
+
+### Numune Takibi
+*(2026-09-02)*
+- Akif'in şu anki aktif odağı — aylık rapordan önce buna geçti.
+- Detay (numune türleri, takip yöntemi, sıklık) Akif'ten alınacak — veri aktarımına
+  ara verildiği için şimdilik burada başlık olarak duruyor.
 
 ### Aylık Rapor Hazırlığı
 *(2026-09-01, iş arkadaşlarıyla konuşma — Granola)*

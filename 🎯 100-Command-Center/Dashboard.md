@@ -1,13 +1,17 @@
 ---
 title: AkifOS Dashboard
 created: 2026-08-26
-modified: 2026-09-01
+modified: 2026-09-02
 type: dashboard
 ---
 # 🧠 AkifOS — Durum Panosu
 
 Bu dosyayı ben (Dündar Dinç) her önemli değişiklikte güncelliyorum. "Ne durumdayız"
 dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynaktan besleniyor.
+
+> **Çalışma modu (2 Eylül):** Akif iş yükünden bunalmış. Veri aktarma / geçmiş-import
+> işine **ara verildi** (onu yoruyor). Odak: Yapı Kimyasalları numune takibi. Kalan işler
+> mobilden takip edilecek. Yeni açık iş yaratma, tek konuya indir.
 
 ## 🏰 Web Tasarım Freelance — Deeploico
 - Marka ismi kesin: **Deeploico** — TürkPatent kontrolü + domain kaydı Akif'te bekliyor
@@ -25,7 +29,10 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - Derz dolgu görsel sunum projesi — ertelendi
 - Dilara hanıma fikrimi danış
 
-**Rutin:** Aylık rapor hazırla — her ay, otomatik tekrarlıyor
+**Rutin:**
+- 🎯 **Numune takibi — AKTİF ODAK (2 Eylül).** Akif şu an buna geçti.
+- 🟡 Aylık rapor: Temmuz+Ağustos birikmiş, gönderimde geç kalındı — numune takibinden
+  sonraya park. Nasıl yapıldığı işyeri fiziksel not defterinde.
 
 **✅ Tamamlandı (1 Eylül):** SMAT girişi, Laboratuvar denemesi
 
@@ -36,7 +43,7 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 - ✅ Elektrik faturası ödendi + abonelik meskene çevrildi
 - ✅ Hobi odası pimapenler için Ömer Üzümcü arandı
 
-**2 Eylül (ertesi gün):**
+**3 Eylül'e devredildi (2 Eylül'de hiçbiri yapılamadı — Akif iş yoğunluğundan bunalmış durumda):**
 - 🔲 Gardırop için **değişim talebinde bulun** — eşinin telefonuyla hoparlörden ara,
   Granola ile kayıt altına al (hak takibi için, detay Threads.md)
 - 🔲 Kettle al · 🔲 Pattex 502 al · 🔲 Talaş tozu + ahşap tutkalı al
@@ -56,7 +63,7 @@ dediğinde bunu okuyup önüne seriyorum — burada Threads.md ile aynı kaynakt
 
 ## 💰 Para Durumu — Kar/Kazanç/Borç Yönetimi
 - Eşimin toplam borcu ~459.000₺, aylık ~20.000₺ açık — detay [[🔐 400-Vault/Bütçe Takibi|Bütçe Takibi]]
-- 🔲 Beklenen: banka promosyonu 105.000₺ (3 iş günü içinde yatacak, 4 Eylül'de kontrol et)
+- ✅ Banka promosyonu **105.000₺ yattı (2 Eylül)** — Bütçe Takibi → Gelir/Alınan'a işlendi
 - 🔲 Akif'in kendi borçları henüz eklenmedi — detaylı yazınca işlenecek
 - Harcama yaptığında bana söyle, oraya işlerim
 

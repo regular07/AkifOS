@@ -1,7 +1,7 @@
 ---
 title: Bütçe Takibi
 created: 2026-08-31
-modified: 2026-09-01
+modified: 2026-09-02
 type: note
 status: active
 tags: [finans, bütçe, kar-kazanç-borç]
@@ -17,11 +17,12 @@ Amaç: gelen paralar, çıkacak paralar, borçlar (Akif + eşi) tek yerde, detay
 | Tarih | Kaynak | Tutar |
 |---|---|---|
 | 2026-08-31 | Maaş | 45.000₺ |
+| 2026-09-02 | Şirket banka promosyonu (3 yılda bir) | 105.000₺ |
 
 **Beklenen:**
 | Ne | Tutar | Durum |
 |---|---|---|
-| Şirket banka promosyonu (3 yılda bir) | 105.000₺ | 🔲 Mail geldi, 3 iş günü içinde yatması bekleniyor |
+| — | — | (banka promosyonu 2026-09-02'de yattı, yukarı taşındı) |
 
 ## 🔴 Borçlar
 
@@ -61,9 +62,9 @@ Eşin taraf: tüm ödemeler ayın ilk haftasında (1-7 arası).
 |---|---|---|
 | Elektrik faturası + abonelik meskene çevirme | ~5.000₺ | ✅ Ödendi (1 Eylül) |
 | Kira | 23.000₺ | 🔲 4 Eylül'e kadar |
-| Pattex 502 | ? | 🔲 2 Eylül |
-| Kettle | ? | 🔲 2 Eylül |
-| Talaş tozu + ahşap tutkalı | ? | 🔲 2 Eylül |
+| Pattex 502 | ? | 🔲 3 Eylül (2 Eylül'den devir) |
+| Kettle | ? | 🔲 3 Eylül (2 Eylül'den devir) |
+| Talaş tozu + ahşap tutkalı | ? | 🔲 3 Eylül (2 Eylül'den devir) |
 
 **Harcama Günlüğü (anında ekle, unutmadan):**
 | Tarih | Ne için | Tutar | Kategori |
