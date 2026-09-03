@@ -30,5 +30,8 @@ onlar [[Proje Bazlı İşler]] dosyasında.
   günü) — Akif "her ay hatırlatmanı istiyorum" dedi.
 - **Güncelleme (2026-09-01 akşam):** Son hazırlanan Haziran'dı, Temmuz+Ağustos birikmiş —
   bu ikisini çıkarma işi ayrı, acil bir görev olarak [[Proje Bazlı İşler]]'e değil, Todoist'e
-  "Temmuz + Ağustos aylık raporlarını çıkar (birikmiş)" adıyla 2 Eylül'e eklendi. Nasıl
-  yapıldığı işyerindeki (fiziksel) not defterinde kayıtlı.
+  "Temmuz + Ağustos aylık raporlarını çıkar (birikmiş)" adıyla 2 Eylül'e eklendi.
+- **Güncelleme (2026-09-03):** Not defterindeki adımlar dijitalleştirildi →
+  [[Aylık Rapor - SAP Veri Cekme]]. Üç ekran: rejenere tüketim raporu (SQ00), SAP Replica /
+  hammadde (QM), KPI doldurma. Birkaç `[?]` yer işyerinde teyit edilecek; KPI doldurma
+  adımları henüz yazılı değil (Akif'in kafasında).

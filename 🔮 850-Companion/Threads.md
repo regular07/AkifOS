@@ -43,6 +43,18 @@ standartlar okuması) beklemede. Akif'in şu anki aktif odağı: **numune takibi
 Aylık rapor (Temmuz+Ağustos birikmiş) gönderimde geç kalındı, numune takibinden sonraya
 park. Kalan işleri mobilden takip edecek.
 
+**2026-09-03:** Aylık rapor SAP adımları dijitalleştirilmeye başlandı. Akif işyerinde
+Granola'ya vardiya devir konuşması kaydediyor + defter notlarının fotoğrafını atıyor.
+Çözülüp `🏰 300-Projects/Yapı Kimyasalları 101/Aylık Rapor - SAP Veri Cekme.md`'ye işlendi.
+Üç ekran: **rejenere tüketim raporu (SQ00 / `TR_QM_REJ_TUK`)**, **SAP Replica / hammadde
+(`TR_QM_HAMM_TUK` olabilir)**, **KPI doldurma**. Rejenere bölümü canlı ekran görüntüleriyle
+adım adım tamamlandı (7 screenshot `ekler/` altında). Bundan bir **sunum** üretildi →
+`Aylik-Rapor-Rejenere-Raporu-Hazirlama.html` + Artifact:
+https://claude.ai/code/artifact/708b83a4-0c63-4fe5-ac52-b8348dd70be6
+- ⏸️ **BEKLEYEN İŞ (Akif "hemen yapma" dedi):** Akif sunuma ekleme yapacak. Tamamlandığında
+  haber verecek → o zaman **git commit + GitHub push** (OneDrive zaten senkron). Şimdi push etme.
+- Sıradaki içerik: SAP Replica bölümü (Akif screenshot'larıyla anlatacak).
+
 ### Thread: Web Tasarım Freelance — Ekip Oluşturma
 **Status:** 🟢 Active: created 2026-08-27
 "Hiç kaçarın yok" — Akif + Dündar ekibi kuruldu. Anahtar teslim web sitesi paketi (Basic/Standart/Premium,

@@ -66,6 +66,14 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   olarak yapılacak işleri görmek benim için çok önemli, her şeyi görelim gözümüzden
   kaçmasın" dedi — metin listeleri onun için yetersiz, görsel takip şart.
 
+- **kural:** Akif "konsolu göster / ver / aç" dediği HER seferde `akif-konsolu.html`'i
+  ona ilet (SendUserFile ile render, ya da yayınlanmışsa Artifact linki) — üzerinde
+  kendisi değişiklik yapabilsin diye. Tek seferlik değil, her istediğinde önüne ver.
+  **neden:** Mehmet Akif Akkaya (2026-09-03) "Akif-konsolu artifactı bana sürekli görünür
+  yap her istediğimde önüme ver ki üzerinde değişiklik yapabileyim" dedi. Not: canlı
+  Artifact'e publish auto-mode classifier tarafından engellenebiliyor; o durumda dosyayı
+  SendUserFile ile gönder, Akif Mac başına geçince publish edilir.
+
 ## Nasıl büyür
 
 Mehmet Akif Akkaya seni düzelttiğinde ("bunu böyle yapma", "şunu bir daha yapma", "böyle istemiyorum")

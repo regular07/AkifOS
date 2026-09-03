@@ -604,7 +604,7 @@
 <div class="priority-grid">
   <div class="priority-card pc-critical">
     <div class="priority-head">🏭 İş — en öncelikli</div>
-    <div class="priority-body"><strong>Numune takibi</strong> (aktif odak) + <strong>Temmuz/Ağustos aylık raporları</strong> (gecikti). SİP + saha stok hâlâ prim şartı.</div>
+    <div class="priority-body"><strong>Numune takibi</strong> (aktif odak) + <strong>Temmuz/Ağustos aylık raporları</strong> (gecikti). Yeni: <strong>rejenere</strong> (Zeki bey'i bekle) + <strong>arge stok nakli</strong> takibi. SİP + saha stok hâlâ prim şartı.</div>
   </div>
   <div class="priority-card pc-critical">
     <div class="priority-head">🏠 Ev — en öncelikli</div>
@@ -677,7 +677,7 @@
             <div class="column-sub">Weber / Yapı Kimyasalları · 08–17 / 15–01</div>
           </div>
         </div>
-        <span class="column-count mono">7</span>
+        <span class="column-count mono">11</span>
       </div>
 
       <div class="lane-label">Proje Bazlı — tarih sırasına göre</div>
@@ -724,10 +724,23 @@
             <div class="card-title">Temmuz + Ağustos aylık raporları</div>
             <div class="card-date">2 Eyl</div>
           </div>
-          <div class="card-desc">Birikmiş, son hazırlanan Haziran'dı. Nasıl yapıldığı işyeri not defterinde kayıtlı.</div>
+          <div class="card-desc">Birikmiş, son hazırlanan Haziran'dı. Rejenere raporu SAP çekme + Yücel formatına dönüştürme adımları artık dijital (talimat + 14 adımlık görselli sunum). Temmuz rejenere Excel'i kontrol edildi: doğru (Genel Toplam 14.130 kg).</div>
           <div class="card-tags">
             <span class="tag tag-warning">BİRİKMİŞ</span>
+            <span class="tag tag-good">REJENERE TALİMATI ✓</span>
             <span class="tag tag-mute">P2</span>
+          </div>
+        </div>
+
+        <div class="card sev-good">
+          <div class="card-top">
+            <div class="card-title">✅ Aylık Rapor — SAP talimatı + sunum</div>
+            <div class="card-date">3 Eyl</div>
+          </div>
+          <div class="card-desc">Rejenere bölümü tam: SAP çekme (Adım 1–9, 7 ekran görüntüsü) + Yücel formatına dönüştürme (Adım 10–14, eşleme tablosu + karar akışı). Sıradaki: SAP Replica (hammadde) + KPI doldurma. git push Akif "tamam" deyince.</div>
+          <div class="card-tags">
+            <span class="tag tag-good">2/4 BÖLÜM</span>
+            <span class="tag tag-mute">SUNUM CANLI</span>
           </div>
         </div>
 
@@ -739,6 +752,43 @@
           <div class="card-desc">qp02 database, qp02 hammadde, standart özetleri. Veri aktarma Akif'i yorduğu için ara verildi.</div>
           <div class="card-tags">
             <span class="tag tag-mute">ARA VERİLDİ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lane-label">Rejenere &amp; Arge takibi — 3 Eylül</div>
+      <div class="lane">
+
+        <div class="card sev-critical">
+          <div class="card-top">
+            <div class="card-title">Rejenere ürün takibi (raf ömrü geçmiş derz)</div>
+            <div class="card-date">Zeki bey</div>
+          </div>
+          <div class="card-desc">Ürün depoya alınacak; Zeki bey nerede/nasıl rejenere edileceğini değerlendirip bilgi verecek — haber bekleniyor. Streçhood yırtılması + torba deformasyonu başlamış (Mustafa Özcan maili). İmha/ıslanma/taşlaşma riski. Rejinal depodan 3.000 alınması gündemde.</div>
+          <div class="card-tags">
+            <span class="tag tag-critical">HABER BEKLENİYOR</span>
+          </div>
+        </div>
+
+        <div class="card sev-warning">
+          <div class="card-top">
+            <div class="card-title">Okan için üretim hazırlığı takibi</div>
+            <div class="card-date">Yarın</div>
+          </div>
+          <div class="card-desc">Akif bugün üretimdeki arkadaşlardan hazırlamalarını istedi. Bugün hazırladıkları ürünleri yarın kontrol edecek. Okan ürünleri bizzat götürüyor.</div>
+          <div class="card-tags">
+            <span class="tag tag-warning">AKİF TAKİP EDECEK</span>
+          </div>
+        </div>
+
+        <div class="card sev-warning">
+          <div class="card-top">
+            <div class="card-title">Arge stok nakli takibi</div>
+            <div class="card-date">3 Eyl</div>
+          </div>
+          <div class="card-desc">Okan Karaman (Arge) 6 kalemi Antalya→İzmir stok nakli istedi (Melis'e): Portland Çimento CEM I 42,5R 60 kg · sanayi tipi toz kireç 50 kg · uçucu kül 40 kg · taş tozu mikronize 50 kg · Kalker 03-08 100 kg · Kalker 01-03 150 kg. Nakil açıldı mı / geldi mi izle.</div>
+          <div class="card-tags">
+            <span class="tag tag-warning">İZLE</span>
           </div>
         </div>
       </div>
@@ -952,9 +1002,9 @@
   // de daireye dahil, sadece tamamlanma yüzdesi filtrelenmiyor.
   (function () {
     var data = [
-      { key: 'completed', label: 'Tamamlanan', value: 17, color: '#3fcf8e' },
+      { key: 'completed', label: 'Tamamlanan', value: 20, color: '#3fcf8e' },
       { key: 'overdue',   label: 'Gecikmiş',   value: 4,  color: '#f0576b' },
-      { key: 'pending',   label: 'Bekleyen',   value: 21, color: '#5b9df2' }
+      { key: 'pending',   label: 'Bekleyen',   value: 25, color: '#5b9df2' }
     ];
     var total = data.reduce(function (s, d) { return s + d.value; }, 0);
 

@@ -11,7 +11,7 @@ tags: [gorev, planlama, master-liste]
 
 Tüm açık işler tek yerde. "Ne yaptık, ne kaldı, ne düştü" sorusunun tek cevabı burası.
 Kaynaklar: Todoist, Dashboard.md, Threads.md, Last-Session.md, Fable planları.
-**Son güncelleme: 2026-09-03.**
+**Son güncelleme: 2026-09-03 (aylık rapor rejenere dijitalleştirme: SAP çekme + Yücel formatı sunumu).**
 
 Durum kodları: 🔴 acil/tarih-kritik · 🟡 açık, sırada · ⏸️ bilinçli park · ✅ bitti · ❌ düştü/iptal · ❓ karar bekliyor
 
@@ -53,6 +53,24 @@ Durum kodları: 🔴 acil/tarih-kritik · 🟡 açık, sırada · ⏸️ bilinç
 | 🔴 SİP girişi (5 adet, eski adı TF5) | p1 | Gecikmiş. İçine iş güvenliği fikri eklendi: numune platformu altı + silo basım alanına duba ile kamyon yanaşma düzeni — **Dilara hanıma danışılacak** |
 | 🔴 Saha stok kontrolü (8/10 kaldı) | p1 | Patlak/çatlak palet + defolu ürün taraması. 2 saha yapıldı (15+21 Temmuz) |
 | 🟡 OneNote sunum (Zeki bey'e) | p2 | Sadece TS EN 13888 (derz dolgu) kaldı. Derz dolgu görsel sunum projesi buraya dahil |
+
+### Rejenere & Arge takibi (3 Eylül — Granola "Palet kontrol ve standartlar" oturumu)
+| İş | Durum | Not |
+|---|---|---|
+| 🔴 Rejenere ürün takibi — raf ömrü geçmiş derz | Zeki bey'den haber bekleniyor | Ürün depoya alınacak; Zeki bey nerede/nasıl rejenere edileceğini değerlendirip bilgi verecek. **Aciliyet:** streçhood yırtılması + torba deformasyonu başlamış (Mustafa Özcan maili, 3 Eylül). İmha/ıslanma/taşlaşma riski. Derz üretimi çok az, yakın vadede üretim yok → miktar elde kalıyor |
+| 🟡 Müdür (Zeki bey) ile rejenere konuşmaları | devam ediyor | Rejinal depodan 3.000 alınması gündemde |
+| 🟡 Okan için üretim hazırlığı takibi | Akif takip edecek | Akif bugün (3 Eylül) üretimdeki arkadaşlardan hazırlamalarını istedi; hazırladıkları ürünleri yarın kontrol edecek. Okan ürünleri bizzat götürüyor |
+| 🟡 Arge stok nakli takibi | Nakil açıldı mı / geldi mi? | Okan Karaman (Arge) 6 kalemi Antalya→İzmir stok nakli istedi (Melis'e, 3 Eylül 14:06): Portland Çimento CEM I 42,5R 60 kg · sanayi tipi toz kireç 50 kg · uçucu kül 40 kg · taş tozu mikronize 50 kg · Kalker 03-08 (780-1500) 100 kg · Kalker 01-03 (0-710) 150 kg |
+
+### Aylık Rapor — SAP adımları dijitalleştirme (3 Eylül)
+- ✅ **Rejenere raporu SAP çekme (Adım 1–9)** — 7 canlı ekran görüntüsüyle → `Aylık Rapor - SAP Veri Cekme.md` + sunum
+- ✅ **Rejenere raporu Yücel formatına dönüştürme (Adım 10–14)** — 3 referans Excel'den (ŞUBAT/MAYIS/TEMMUZ) çözüldü: sütun eşlemesi, 7 sütun sil, 2 başlık, özet blok kategori mantığı, Genel Toplam. Sunuma görsellerle eklendi (eşleme tablosu + karar akışı + örnek satır + sonuç kartları)
+- ✅ **Temmuz Excel'i kontrol edildi** — Akif'in düzelttiği dosya doğru (6.400 / 5.530 / 2.200 → Genel Toplam 14.130 kg). Tek eksik: sheet adı hâlâ `RawData`, `TEMMUZ REJENERE` olmalı
+- Sunum: `Aylik-Rapor-Rejenere-Raporu-Hazirlama.html` ([Artifact](https://claude.ai/code/artifact/708b83a4-0c63-4fe5-ac52-b8348dd70be6)) — 14 adım, 2 bölüm (A: SAP çek / B: formata dönüştür)
+- 🟡 **SAP Replica bölümü** — hammadde çekme, Akif screenshot'larıyla anlatacak (sıradaki)
+- 🟡 **KPI doldurma bölümü** — adımlar henüz yazılı değil (Akif'in kafasında)
+- ❓ **DENEME üretimi kategorisi** — nasıl ayırt edildiği net değil (Temmuz'da örnek yoktu); deneme rejenere olan bir ayda kesinleşecek
+- ⏸️ **git push** — Akif "sunumu tamamlayınca haber vereceğim, o zaman commit + GitHub push" dedi (2 Eylül'den beri OneDrive senkron; sadece git kaldı). Şimdi push etme.
 
 ### İş — açık ama Todoist'te olmayan
 - ⏸️ **OneDrive iş bilgi tabanı derinleştirme** — qp02 database/hammadde, standartlar okuması. Harita çıkarıldı (`OneDrive Kaynak Haritası.md`). **Veri aktarma yorduğu için ara verildi.**
